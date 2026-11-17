@@ -1,0 +1,16 @@
+<pre><div class="text_to_html">1. Use Case: Name, bestehend aus zwei oder drei W&ouml;rtern (was wird getan?)
+2. Ziel: globale Zielsetzung bei erfolgreicher Ausf&uuml;hrung des Use Case
+3. Vorbedingung: Erwarteter Zustand, vor Beginn
+4. Zustand Erfolg: Erwarteter Zustand nach erfolgreicher Ausf&uuml;hrung, d.h. Ergebnis des Gesch&auml;ftsprozesses
+5. Zustand Fehlschlag: Erwarteter Zustand, wenn das Ziel nicht erreicht werden kann
+6. Akteure: Rollen von Personen oder andere Systeme, die den Use Case ausl&ouml;sen oder daran beteiligt sind
+7. Ausl&ouml;sendes Ereignis: Wenn dieses Ereignis eintritt, dann wird der Use Case initiiert
+8. Normaler Ablauf: 
+	1 Erste Aktion
+	2 Zweite Aktion
+Erweiterungen:
+	1a Erweiterung des Funktionsumfangs der erste Aktion
+Alternativen:
+	1a Alternative Ausf&uuml;hrung der ersten Aktion
+	1b Weitere Alternative zur ersten Aktion
+</div></pre>

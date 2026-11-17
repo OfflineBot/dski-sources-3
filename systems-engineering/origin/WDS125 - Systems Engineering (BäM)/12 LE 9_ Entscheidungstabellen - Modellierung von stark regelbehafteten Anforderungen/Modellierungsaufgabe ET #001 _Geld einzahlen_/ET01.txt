@@ -1,0 +1,9 @@
+﻿ET #001 "Geld einzahlen" für UC #001 "Geld einzahlen"
+
+Ist die Karte gültig und wird die korrekte PIN eingegeben, dann wird der Schacht für die Geldeingabe geöffnet. Ist die Karte nicht gültig, wird sie zurückgewiesen. Ist die PIN falsch, wird sie erneut angefordert. Bei der dritten fehlerhaften PIN-Eingabe wird die Karte einbehalten. Ist der eingezahlte Betrag nach seiner Prüfung akzeptabel (kein Falschgeld, keine Fremdwährung) wird das Geld auf dem Konto des Kunden verbucht. Ansonsten wird der Schacht zur Geldentnahme geöffnet.
+
+
+Aufgabe: Modellieren Sie die konsolidierte Entscheidungstabelle ET #001 "Geld einzahlen"
+
+(Tipp: Machen Sie es in einem Tabellenkalkulationsprogramm wie Excel, LibreOffice Calc etc.)
+
