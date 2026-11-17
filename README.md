@@ -28,7 +28,7 @@ Where
     (all tasks from the lectures are here)
 - `topic1` must be renamed to its actual topic name
 - `topic2` like `topic1` but a different topic inside the lecture original notes
-- `ABOUT.md` contains extra information i got from the profs about the lecture
+- `ABOUT.md` contains extra information i got from the profs about the exam
 
 
 ## Use of AI
@@ -48,4 +48,16 @@ Only copy information for better organization!
 - create new topics based on the `origin/` and copy information to `topics/`
 
 Copy the information from `origin/` to the other folders
+
+
+## About.md
+each about.md is important. it holds special information for the exam and what is important!
+
+
+## Language
+All config files that are useful for ai will be written in *english*. 
+Everything that has to do with tasks, exam or anything about the topic will be in *german*.
+
+The exams and tests and anything will be later in *german*.
+English is used to differentiate easily about framework and lectures.
 
