@@ -84,16 +84,32 @@ Where
 ### Topics
 
 Every topic gets its own folder inside `topics/`.
+A topic is split into its sub topics, one folder each.
 
 ```
 topic_name_1/
     |- TOPIC.md
-    |- images/
+    |- 01-sub_topic_name/
+        |- TOPIC.md
+        |- images/
+    |- 02-sub_topic_name/
+        |- TOPIC.md
+        |- images/
 ```
 
 Where 
-- `TOPIC.md` is the lecture content of the topic, word by word out of `origin/`
-- `images/` are the figures of the topic, cut out of the original file
+- `TOPIC.md` in the topic folder is only the index 
+    (a short list that links every sub topic, no lecture content)
+- `01-sub_topic_name` follows the chapters of the original lecture notes
+- `01-sub_topic_name/TOPIC.md` is the lecture content, word by word out of `origin/`
+- `images/` are only the figures that can **not** be written as markdown
+
+A table becomes a markdown table. 
+A diagram, a chart, a curve or a scan stays an image. 
+Nothing is kept as a screenshot when the same thing can be written down.
+
+What the prof says next to a slide goes under its own `## Notizen` heading, 
+so slide content and spoken comment stay apart.
 
 The order may be changed so it is better to learn. 
 The words may not.
