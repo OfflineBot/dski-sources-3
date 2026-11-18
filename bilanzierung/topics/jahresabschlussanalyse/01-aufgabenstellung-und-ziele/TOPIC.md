@@ -2,7 +2,7 @@
 
 ## Aufgabenstellung
 
-Ihr Unternehmen hat einen neuen Großkunden gefunden. Allerdings ist sich die Finanzabteilung nicht sicher, ob der Kunde wirklich liquide ist und auch zukünftig seine Rechnungen bezahlen kann. Sie sollen daher eine Jahresabschlussanalyse durchführen und eine Aussage über die Bonität des Kunden machen. Folgende Daten erhalten Sie.
+Ihr Unternehmen hat einen neuen Großkunden gefunden. Die Finanzabteilung ist sich allerdings nicht sicher, ob der Kunde wirklich liquide ist und auch zukünftig seine Rechnungen bezahlen kann. Sie sollen daher eine Jahresabschlussanalyse durchführen und eine Aussage über die Bonität des Kunden machen. Folgende Daten erhalten Sie.
 
 Bilanz
 
@@ -32,12 +32,12 @@ Gewinn- und Verlustrechnung
 
 ## Ziele
 
-- Die Jahresabschlussanalyse dient dazu, die finanzielle Lage, die wirtschaftliche Leistungsfähigkeit und die Ertragskraft eines Unternehmens anhand der im Jahresabschluss ausgewiesenen Daten zu beurteilen.
-- Durch die Analyse von Bilanz, Gewinn- und Verlustrechnung (GuV) und teilweise auch von Anhang und Lagebericht können wertvolle Erkenntnisse über die Vermögens-, Finanz- und Ertragslage eines Unternehmens gewonnen werden.
-- Banken, Investoren und Rating-Agenturen nutzen die Jahresabschlussanalyse, um die Kreditwürdigkeit und das Risiko eines Unternehmens abzuschätzen.
+- Jahresabschlussanalyse: beurteilt die finanzielle Lage, die wirtschaftliche Leistungsfähigkeit und die Ertragskraft eines Unternehmens anhand der im Jahresabschluss ausgewiesenen Daten.
+- Aus der Analyse von Bilanz, Gewinn- und Verlustrechnung (GuV) und teilweise auch von Anhang und Lagebericht können wertvolle Erkenntnisse über die Vermögens-, Finanz- und Ertragslage eines Unternehmens gewonnen werden.
+- Banken, Investoren und Rating-Agenturen schätzen damit die Kreditwürdigkeit und das Risiko eines Unternehmens ab.
 
 | Beurteilung der Ertragslage | Beurteilung der Finanzlage | Beurteilung der Vermögensstruktur |
 |---|---|---|
-| Durch die Analyse der Ertragslage wird ersichtlich, wie effizient ein Unternehmen arbeitet und ob es nachhaltig Gewinne erzielt. Kennzahlen wie die Eigenkapitalrendite, Gesamtkapitalrendite oder Umsatzrendite zeigen, wie gut das Unternehmen seine Ressourcen in Gewinne umwandelt. | Sie ermöglicht einen Einblick in die Liquiditätssituation und Kapitalstruktur eines Unternehmens, was entscheidend für dessen Stabilität und Solvenz ist. | Hier wird untersucht, wie das Vermögen eines Unternehmens verteilt ist, also wie hoch die Anteile des Anlage- und Umlaufvermögens sind. Auch die Zusammensetzung der Vorräte und Forderungen kann auf Effizienzpotenziale oder Risiken, etwa durch hohe Lagerbestände oder ausstehende Forderungen, hinweisen. |
+| Zeigt, wie effizient ein Unternehmen arbeitet und ob es nachhaltig Gewinne erzielt. Kennzahlen wie Eigenkapitalrendite, Gesamtkapitalrendite oder Umsatzrendite zeigen, wie gut das Unternehmen seine Ressourcen in Gewinne umwandelt. | Einblick in die Liquiditätssituation und Kapitalstruktur eines Unternehmens, was entscheidend für dessen Stabilität und Solvenz ist. | Untersucht, wie das Vermögen eines Unternehmens verteilt ist, also wie hoch die Anteile des Anlage- und Umlaufvermögens sind. Auch die Zusammensetzung der Vorräte und Forderungen kann auf Effizienzpotenziale oder Risiken hinweisen, etwa durch hohe Lagerbestände oder ausstehende Forderungen. |
 
 Quelle: `bilanzierung/origin/WDS25 - Bilanzierung (NOU)/04 1 - Folien/Bilanzierung - Q4 2026/Bilanzierung - Q4 2026.pdf`, Folien 86–90

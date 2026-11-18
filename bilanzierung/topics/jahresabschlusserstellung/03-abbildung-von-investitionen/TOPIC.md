@@ -70,7 +70,7 @@ Das Unternehmen erwirbt ein Patent für 15.000 und bezahlt in bar: immaterielles
 
 - **Definition:** Vorräte in der Bilanz = Bestände an Rohstoffen, Materialien, unfertigen und fertigen Erzeugnissen sowie Handelswaren, die ein Unternehmen für seine Produktion und den Verkauf hält. Sie spiegeln die Ressourcen eines Unternehmens wider, die zur Weiterverarbeitung, zum Verkauf oder zur Unterstützung der laufenden Geschäftstätigkeit benötigt werden.
 - Typische Beispiele: Rohstoffe, Unfertige Erzeugnisse und fertige Erzeugnisse.
-- Ein zu hoher Lagerbestand an Vorräten kann zu höheren Lagerkosten, einer geringeren Liquidität (wenig Cash) und Zinskosten führen.
+- Zu hoher Lagerbestand an Vorräten kann zu höheren Lagerkosten, geringerer Liquidität (wenig Cash) und Zinskosten führen.
 
 ## Ansatz und Bewertung des Umlaufvermögens
 

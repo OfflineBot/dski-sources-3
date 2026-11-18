@@ -5,7 +5,7 @@
 Frage: Welche Bestandteile sind im Jahresabschluss?
 
 - Bestandteile: Bilanz, GuV, Kapitalflussrechnung, Anhang, Lagebericht
-- Für Kapitalgesellschaften nach § 267 HGB von verschiedenen Größenkriterien abhängig: je nach Größenklasse unterschiedliche Jahresabschlussbestandteile notwendig.
+- Bestandteile von Jahresabschlüssen sind für Kapitalgesellschaften nach § 267 HGB von verschiedenen Größenkriterien abhängig: je nach Größenklasse unterschiedliche Jahresabschlussbestandteile notwendig.
 
 Bestandteile insgesamt
 

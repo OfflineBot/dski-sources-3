@@ -7,21 +7,21 @@
 Merkmale von Eigenkapital:
 
 - **Risikoübernahme:** trägt das volle unternehmerische Risiko; bei Insolvenz werden Verbindlichkeiten gegenüber Gläubigern (Fremdkapitalgebern) vorrangig bedient, das Eigenkapital kann verloren gehen.
-- **Unbefristet:** steht dem Unternehmen grundsätzlich unbefristet zur Verfügung und muss nicht zurückgezahlt werden.
-- **Anspruch auf Gewinn:** Eigenkapitalgeber haben Anspruch auf den Gewinn des Unternehmens, entweder als Dividenden (bei Aktiengesellschaften) oder als Entnahmen (bei Einzelunternehmen und Personengesellschaften).
-- **Mitbestimmung:** Eigenkapitalgeber (z. B. Aktionäre) haben in der Regel ein Mitspracherecht bei wichtigen Unternehmensentscheidungen.
+- **Unbefristet:** steht dem Unternehmen grundsätzlich unbefristet zur Verfügung; muss nicht zurückgezahlt werden.
+- **Anspruch auf Gewinn:** Eigenkapitalgeber haben Anspruch auf den Gewinn des Unternehmens – entweder als Dividenden (bei Aktiengesellschaften) oder als Entnahmen (bei Einzelunternehmen und Personengesellschaften).
+- **Mitbestimmung:** in der Regel Mitspracherecht der Eigenkapitalgeber (z. B. Aktionäre) bei wichtigen Unternehmensentscheidungen.
 
 ## Arten von Eigenkapital
 
 | Gezeichnetes Kapital | Kapitalrücklage | Gewinnrücklage | Gewinnvortrag | Jahresüberschuss |
 |---|---|---|---|---|
-| Grundkapital bei einer Aktiengesellschaft (AG), Stammkapital bei einer Gesellschaft mit beschränkter Haftung (GmbH); von den Gesellschaftern eingebrachtes Kapital, Basis des Eigenkapitals | Entsteht, wenn die Gesellschafter zusätzlich zum gezeichneten Kapital Kapital einbringen, z. B. bei einem Agio (Aufgeld) bei der Ausgabe neuer Aktien über den Nennwert | Nicht ausgeschüttete Gewinne, die das Unternehmen im Laufe der Zeit angesammelt hat; dienen dazu, die finanzielle Stabilität des Unternehmens zu stärken und Risiken abzufedern | Teil des Jahresüberschusses, der nicht ausgeschüttet und auf das nächste Jahr vorgetragen wird. Verlustvortrag: auf das nächste Geschäftsjahr vorgetragener Verlust | Differenz von Erträgen und Aufwendungen; erhöht das Eigenkapital eines Unternehmens |
+| Grundkapital bei einer Aktiengesellschaft (AG), Stammkapital bei einer Gesellschaft mit beschränkter Haftung (GmbH); von den Gesellschaftern eingebrachtes Kapital, Basis des Eigenkapitals | Entsteht, wenn die Gesellschafter zusätzlich zum gezeichneten Kapital Kapital einbringen, z. B. Agio (Aufgeld) bei der Ausgabe neuer Aktien über den Nennwert | Nicht ausgeschüttete Gewinne, die das Unternehmen im Laufe der Zeit angesammelt hat; Zweck: finanzielle Stabilität des Unternehmens stärken und Risiken abfedern | Teil des Jahresüberschusses, der nicht ausgeschüttet und auf das nächste Jahr vorgetragen wird. Verlustvortrag: auf das nächste Geschäftsjahr vorgetragener Verlust | Differenz von Erträgen und Aufwendungen; erhöht das Eigenkapital eines Unternehmens |
 
 ## Beispiel: Eigentümer gründen das Unternehmen mit 50.000€
 
 - Schulze und Miller gründen die SAS AG durch die Einlage von 50.000€.
-- Kapitalherkunft: Das Unternehmen erhält damit 50.000€ in bar von den Eigentümern.
-- Kapitalverwendung: Das Geld wird im ersten Schritt auf ein Bankkonto gelegt.
+- Kapitalherkunft: 50.000€ in bar von den Eigentümern.
+- Kapitalverwendung: im ersten Schritt auf ein Bankkonto gelegt.
 
 Kapitalverwendung / Kapitalherkunft
 
@@ -55,8 +55,8 @@ Neue Aktionäre kaufen Aktien zu einem Ausgabepreis von 5€. Nennwert ist 1€,
 Merkmale von Fremdkapital:
 
 - **Rückzahlungspflicht:** muss an die Gläubiger (z. B. Banken, Lieferanten) zurückgezahlt werden, oft inklusive Zinsen.
-- **Zeitlich begrenzt:** Verfügbarkeit auf eine bestimmte Laufzeit begrenzt (z. B. ein Darlehen mit einer Laufzeit von fünf Jahren).
-- **Keine Mitbestimmungsrechte:** Fremdkapitalgeber haben keine Mitbestimmungsrechte im Unternehmen, im Gegensatz zu Eigenkapitalgebern.
+- **Zeitlich begrenzt:** Verfügbarkeit auf eine bestimmte Laufzeit begrenzt (z. B. Darlehen mit Laufzeit von fünf Jahren).
+- **Keine Mitbestimmungsrechte:** Fremdkapitalgeber haben im Unternehmen keine, im Gegensatz zu Eigenkapitalgebern.
 - **Verzinsung:** in der Regel verzinslich, d. h. der Gläubiger erhält eine Gegenleistung für die Bereitstellung der Mittel (z. B. Zinsen bei Krediten).
 
 ## Arten von Schulden
@@ -69,13 +69,13 @@ Merkmale von Fremdkapital:
 
 | Verbindlichkeiten ggü. Kreditinstituten | Erhaltene Anzahlungen | Verbindlichkeiten aus Lieferung und Leistung | Sonstige Verbindlichkeiten |
 |---|---|---|---|
-| Schulden, die ein Unternehmen oder eine Person bei Banken oder anderen Kreditinstituten hat; entstehen, wenn ein Kreditinstitut einem Unternehmen finanzielle Mittel in Form von Darlehen, Krediten oder Überziehungen auf einem Bankkonto zur Verfügung stellt | Schulden eines Unternehmens, die durch Anzahlungen von Kunden für zukünftige Leistungen oder Produkte entstehen; das Unternehmen hat seine Lieferpflicht noch nicht erfüllt, der Kunde seine Zahlungspflicht hingegen schon | Kurzfristige Schulden eines Unternehmens gegenüber seinen Lieferanten; entstehen, wenn ein Unternehmen Waren oder Dienstleistungen erhält, die es noch nicht sofort bezahlt hat; zählen zu den kurzfristigen Verbindlichkeiten | Alle Schulden, die nicht direkt aus der Geschäftstätigkeit (also dem Einkauf von Waren oder Dienstleistungen) oder aus Krediten bei Banken stammen, also z.B. Verbindlichkeiten ggü. Mitarbeitern, ggü. der Sozialversicherung oder ggü. dem Finanzamt |
+| Schulden eines Unternehmens oder einer Person bei Banken oder anderen Kreditinstituten; entstehen, wenn ein Kreditinstitut einem Unternehmen finanzielle Mittel in Form von Darlehen, Krediten oder Überziehungen auf einem Bankkonto zur Verfügung stellt | Schulden eines Unternehmens durch Anzahlungen von Kunden für zukünftige Leistungen oder Produkte; das Unternehmen hat seine Lieferpflicht noch nicht erfüllt, der Kunde seine Zahlungspflicht hingegen schon | Kurzfristige Schulden eines Unternehmens gegenüber seinen Lieferanten; entstehen, wenn es Waren oder Dienstleistungen erhält, die es noch nicht sofort bezahlt hat; zählen zu den kurzfristigen Verbindlichkeiten | Alle Schulden, die nicht direkt aus der Geschäftstätigkeit (also dem Einkauf von Waren oder Dienstleistungen) oder aus Krediten bei Banken stammen, z.B. Verbindlichkeiten ggü. Mitarbeitern, ggü. der Sozialversicherung oder ggü. dem Finanzamt |
 
 ## Beispiel: Das Unternehmen leiht sich 100.000€ bei der Bank
 
 - Das Unternehmen leiht sich dann 100.000 durch einen Bankkredit.
 - Kapitalherkunft: 100.000€ in bar von einem Kreditinstitut, die es zurückzahlen muss.
-- Kapitalverwendung: Das Geld wird dann wieder auf ein Bankkonto gelegt.
+- Kapitalverwendung: dann wieder auf ein Bankkonto gelegt.
 
 Kapitalverwendung / Kapitalherkunft
 
@@ -88,7 +88,7 @@ Kapitalverwendung / Kapitalherkunft
 
 - Kunden bestellen Produkte bei der SAS und leisten Anzahlungen in Höhe von 20.000€.
 - Kapitalherkunft: 20.000€ in bar von Kunden, die das Unternehmen zurückzahlen muss, wenn es nicht liefern kann.
-- Kapitalverwendung: Es wird im ersten Schritt wieder auf ein Bankkonto gelegt.
+- Kapitalverwendung: im ersten Schritt wieder auf ein Bankkonto gelegt.
 
 Kapitalverwendung / Kapitalherkunft
 
@@ -99,9 +99,9 @@ Kapitalverwendung / Kapitalherkunft
 
 ## Beispiel: Das Unternehmen bestellt und zahlt „auf Ziel“
 
-- Das Unternehmen erhält eine Lieferung von Rohstoffen für die Produktion in Höhe von 8.000€ auf Ziel, d.h. die Bezahlung erfolgt erst zu einem späteren Zeitpunkt.
-- Kapitalherkunft: Rohstoffe von Lieferanten, die das Unternehmen bezahlen muss; dies stellt eine Schuld dar.
-- Kapitalverwendung: Die Rohstoffe werden auf Lager gelegt.
+- Das Unternehmen erhält eine Lieferung von Rohstoffen für die Produktion in Höhe von 8.000€ auf Ziel, d.h. Bezahlung erst zu einem späteren Zeitpunkt.
+- Kapitalherkunft: Rohstoffe von Lieferanten, die das Unternehmen bezahlen muss = Schuld.
+- Kapitalverwendung: Rohstoffe werden auf Lager gelegt.
 
 Kapitalverwendung / Kapitalherkunft
 

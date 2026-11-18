@@ -2,7 +2,7 @@
 
 ## GuV – Zweck
 
-1. **Ermittlung des Periodenergebnisses:** Hauptzweck der GuV: Berechnung des Gewinns oder Verlusts, den ein Unternehmen innerhalb eines bestimmten Zeitraums erzielt hat. Zeigt, ob das Unternehmen profitabel arbeitet und wie viel Überschuss oder Fehlbetrag erwirtschaftet wurde. Jahresüberschuss = Differenz aller Erträge und aller Aufwendungen; zeigt, was das Unternehmen verdient hat.
+1. **Ermittlung des Periodenergebnisses:** Hauptzweck der GuV: Berechnung des Gewinns oder Verlusts eines Unternehmens innerhalb eines bestimmten Zeitraums; zeigt, ob das Unternehmen profitabel arbeitet und wie viel Überschuss oder Fehlbetrag erwirtschaftet wurde. Jahresüberschuss = Differenz aller Erträge und aller Aufwendungen; zeigt, was das Unternehmen verdient hat.
 2. **Analyse der Ertrags- und Aufwandsstruktur:** detaillierte Einblicke in die Erträge (z. B. Umsatzerlöse) und Aufwendungen (z. B. Materialkosten, Personalaufwand, Abschreibungen) des Unternehmens; hilft dem Management zu verstehen, welche Kosten und Einnahmen maßgeblich zum Erfolg oder Misserfolg beitragen.
 3. **Grundlage für Steuerberechnungen:** Grundlage für die Ermittlung des steuerpflichtigen Einkommens eines Unternehmens; zeigt den steuerlichen Gewinn, auf dessen Basis Steuern berechnet und an das Finanzamt abgeführt werden.
 
@@ -17,13 +17,13 @@
 | Personalaufwand | Geld- und Sachleistungen an Mitarbeiter während des Geschäftsjahres als Arbeitsentgelt, z.B. Gehalt. |
 | Abschreibungen | Planmäßige und außerplanmäßige Wertminderungen von Sachanlagen und immateriellen Anlagen, z.B. Patente und Maschinen. |
 | Sonstige betriebliche Aufwendungen | Sammelposten für alles, was nicht unter 1-3 fällt, z.B. Werbeaufwendungen, Reisespesen, Provisionen, Mieten und Pachten, Leasingaufwendungen, etc. |
-| Zinsaufwand | Zinsen, die für die Überlassung von Kapital entstehen (z.B. durch Kredit) |
+| Zinsaufwand | Zinsen für die Überlassung von Kapital (z.B. durch Kredit) |
 
 Gesamte operative Aufwendungen des Unternehmens
 
 ## Beispiel Materialaufwand: Das Unternehmen verbraucht Rohstoffe für die Produktion
 
-Das Unternehmen verbraucht für 8.000€ Vorräte (Rohstoffe) für die Produktion. Die 8.000 € sind Materialaufwand des laufenden Jahres (Materialaufwand in der GuV) und mindern den Wert der Vorräte.
+Das Unternehmen verbraucht für 8.000€ Vorräte (Rohstoffe) für die Produktion: Materialaufwand des laufenden Jahres (Materialaufwand in der GuV), mindert den Wert der Vorräte.
 
 | Aktiva — Bilanz | Passiva |
 |---|---|
@@ -36,7 +36,7 @@ Das Unternehmen verbraucht für 8.000€ Vorräte (Rohstoffe) für die Produktio
 
 ## Beispiel Personalaufwand: Das Unternehmen muss Mitarbeiter bezahlen
 
-Das Unternehmen muss den Mitarbeitern 30.000 an Gehalt überweisen für das aktuelle Jahr. Die 30.000 € sind Aufwand des laufenden Jahres (Personalaufwand in der GuV) und mindern den Wert des Kassenbestands bzw. Bankguthaben.
+Das Unternehmen muss den Mitarbeitern 30.000 an Gehalt überweisen für das aktuelle Jahr: Aufwand des laufenden Jahres (Personalaufwand in der GuV), mindert den Wert des Kassenbestands bzw. Bankguthaben.
 
 | Aktiva — Bilanz | Passiva |
 |---|---|
@@ -49,7 +49,7 @@ Das Unternehmen muss den Mitarbeitern 30.000 an Gehalt überweisen für das aktu
 
 ## Beispiel Zinsaufwand: Das Unternehmen bezahlt die Zinsen für den Kredit
 
-Das Unternehmen muss 10.000 Zinsen an die Bank in bar bezahlen. Die 10.000 € sind Aufwand des laufenden Jahres (Zinsaufwand in der GuV) und mindern den Bestand an Kasse bzw. Bankguthaben.
+Das Unternehmen muss 10.000 Zinsen an die Bank in bar bezahlen: Aufwand des laufenden Jahres (Zinsaufwand in der GuV), mindert den Bestand an Kasse bzw. Bankguthaben.
 
 | Aktiva — Bilanz | Passiva |
 |---|---|
@@ -62,7 +62,7 @@ Das Unternehmen muss 10.000 Zinsen an die Bank in bar bezahlen. Die 10.000 € s
 
 ## Beispiel Abschreibungen: Das Unternehmen muss die Server abschreiben
 
-Das Unternehmen muss eine Maschine abschreiben; dafür fallen 5.000€ Kosten an. Die 5.000 € sind Aufwand des laufenden Jahres (Abschreibungen in der GuV) und mindern den Wert des Servers.
+Das Unternehmen muss eine Maschine abschreiben; dafür fallen 5.000€ Kosten an: Aufwand des laufenden Jahres (Abschreibungen in der GuV), mindert den Wert des Servers.
 
 | Aktiva — Bilanz | Passiva |
 |---|---|
@@ -104,6 +104,6 @@ Als Abschreibungsmethoden haben sich die folgenden etabliert:
 
 - Folgebewertung: Wegen der handelsrechtlichen Bilanzierungszwecke gilt hier das Niederstwertprinzip.
 - Gesetzliche Grundlage (§253 (3)): „Bei Vermögensgegenständen des Anlagevermögens sind bei voraussichtlich dauernder Wertminderung außerplanmäßige Abschreibungen vorzunehmen, um diese mit dem niedrigeren Wert anzusetzen, der ihnen am Abschlussstichtag beizulegen ist.“
-- Konten: Außerplanmäßige Abschreibungen sind ebenso Teil des GuV-Position „Abschreibungen“ gem. §275 HGB.
+- Konten: Außerplanmäßige Abschreibungen sind ebenso Teil der GuV-Position „Abschreibungen“ gem. §275 HGB.
 
 Quelle: `bilanzierung/origin/WDS25 - Bilanzierung (NOU)/04 1 - Folien/Bilanzierung - Q4 2026/Bilanzierung - Q4 2026.pdf`, Folien 58–66

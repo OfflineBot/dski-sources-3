@@ -11,9 +11,9 @@
 | Mittelgroß | 6 < BS ≤ 20 | 12 < UE ≤ 40 | 50 < AN ≤ 250 |
 | Groß | BS > 20 | UE > 40 | AN > 250 |
 
-- Die Zugehörigkeit zu einer bestimmten Klasse orientiert sich daran, ob die Gesellschaft an zwei aufeinanderfolgenden Abschlussstichtagen mindestens zwei der drei Grenzwerte überschreitet. Die Grenzwerte gelten für den Einzelabschluss.
-- Allerdings gilt eine Gesellschaft gemäß § 267 (3) S. 2 HGB stets als groß, wenn sie mit Aktien und/oder Anleihen einen organisierten Markt in Anspruch nimmt bzw. eine Zulassung zum Handel beantragt ist. Organisierte Märkte sind Märkte, die einer hohen Transparenzpflicht unterliegen.
-- Die Angabe der Mitarbeiterzahl findet sich bei Kapitalgesellschaften gem. §285, Nr. 7 HGB im Anhang.
+- Zugehörigkeit zu einer bestimmten Klasse: orientiert sich daran, ob die Gesellschaft an zwei aufeinanderfolgenden Abschlussstichtagen mindestens zwei der drei Grenzwerte überschreitet. Die Grenzwerte gelten für den Einzelabschluss.
+- Allerdings gilt eine Gesellschaft stets als groß (§ 267 (3) S. 2 HGB), wenn sie mit Aktien und/oder Anleihen einen organisierten Markt in Anspruch nimmt bzw. eine Zulassung zum Handel beantragt ist. Organisierte Märkte: Märkte, die einer hohen Transparenzpflicht unterliegen.
+- Angabe der Mitarbeiterzahl: bei Kapitalgesellschaften gem. §285, Nr. 7 HGB im Anhang.
 
 ## Was wird geprüft?
 
@@ -25,9 +25,9 @@
 
 ## Die Big Four
 
-- Big Four bezeichnet das Oligopol der vier größten Wirtschaftsprüfungsgesellschaften der Welt: Deloitte, EY), KPMG und PricewaterhouseCoopers (PwC). Es steht für rund 67 Prozent des weltweiten Umsatzes in der Wirtschaftsprüfung.
-- Die Big Four prüfen einen Großteil der börsennotierten Unternehmen weltweit, unter anderem nahezu alle Gesellschaften in den großen Aktienindizes S&P 500 (USA), DAX (Deutschland) und FTSE 100 (Großbritannien).
-- In Deutschland werden von den 160 börsennotierten Unternehmen, die die vier wichtigsten deutschen Aktienindizes DAX, MDAX, SDAX und TecDAX bilden, 142 von den Big Four geprüft.
+- Big Four: Oligopol der vier größten Wirtschaftsprüfungsgesellschaften der Welt: Deloitte, EY), KPMG und PricewaterhouseCoopers (PwC); steht für rund 67 Prozent des weltweiten Umsatzes in der Wirtschaftsprüfung.
+- Prüfen einen Großteil der börsennotierten Unternehmen weltweit, unter anderem nahezu alle Gesellschaften in den großen Aktienindizes S&P 500 (USA), DAX (Deutschland) und FTSE 100 (Großbritannien).
+- Deutschland: von den 160 börsennotierten Unternehmen, die die vier wichtigsten deutschen Aktienindizes DAX, MDAX, SDAX und TecDAX bilden, werden 142 von den Big Four geprüft.
 
 Die größten Wirtschaftsprüfungsgesellschaften in Deutschland
 
@@ -48,7 +48,7 @@ Alle Angaben für 2006 — Quelle: Lünendonk
 
 ## Ergebnis
 
-- Das Ergebnis der Prüfung ist ein Testat durch den Abschlussprüfer/Wirtschaftsprüfer. (§316 (a) HGB), das als Bestätigungsvermerk Teil des Jahresabschlusses wird.
+- Ergebnis der Prüfung: Testat durch den Abschlussprüfer/Wirtschaftsprüfer (§316 (a) HGB), das als Bestätigungsvermerk Teil des Jahresabschlusses wird.
 - Mögliche Ergebnisse des Testats: uneingeschränkt, eingeschränkt, verweigert
 
 ![Bestätigungsvermerk](images/folie-020.png)
