@@ -19,9 +19,9 @@ Durchschnittliche Lebensdauer einer Programmiersprache: 15 J.
 
 ![Entwicklungskosten](images/folie-08.png)
 
-Java/C++: 1 FP ≈ 53 LOC
-C: 1 FP ≈ 128 LOC
-VB: 1 FP ≈ 32 LOC
+- Java/C++: 1 FP ≈ 53 LOC
+- C: 1 FP ≈ 128 LOC
+- VB: 1 FP ≈ 32 LOC
 
 ## Anzahl ausgelieferter Fehler
 

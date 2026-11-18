@@ -1,22 +1,11 @@
 # Jahresabschlussbestandteile und Grundlagen der Bilanz
 
-## Inhaltsübersicht
-
-Bilanzierung und Jahresabschluss
-
-1. Jahresabschlussgrundlagen
-2. Jahresabschlusserstellung
-3. Jahresabschlussanalyse
-
-## Jahresabschlussbestandteile
-
-**Bestandteile nach Größenkriterien**
+## Bestandteile nach Größenkriterien
 
 Frage: Welche Bestandteile sind im Jahresabschluss?
 
-Die Bestandteile von Jahresabschlüssen sind für Kapitalgesellschaften nach § 267 HGB von verschiedenen Größenkriterien abhängig:
-
-- Je nach Größenklasse sind unterschiedliche Jahresabschlussbestandteile notwendig:
+- Bestandteile: Bilanz, GuV, Kapitalflussrechnung, Anhang, Lagebericht
+- Für Kapitalgesellschaften nach § 267 HGB von verschiedenen Größenkriterien abhängig: je nach Größenklasse unterschiedliche Jahresabschlussbestandteile notwendig.
 
 Bestandteile insgesamt
 
@@ -29,42 +18,22 @@ Bestandteile insgesamt
 | Kapitalgesellschaft | Große | x | x | x | x | | |
 | Als Vergleich | Konzernabschlüsse | x | x | x | x | x | x |
 
-## Jahresabschlussbestandteile
+## Bilanz – Zweck
 
-**Bilanz**
-
-Bestandteile
-
-- Bilanz
-- GuV
-- Kapitalflussrechnung
-- Anhang
-- Lagebericht
-
-Zweck der Bilanz
-
-- Vermittlung eines Bildes der Vermögens- und Finanzlage des Unternehmens (§264 (2) HGB). Hierzu werden die folgenden Positionen in der Bilanz abgebildet:
+Vermittlung eines Bildes der Vermögens- und Finanzlage des Unternehmens (§264 (2) HGB). Dazu in der Bilanz abgebildete Positionen:
 
 ![Zweck der Bilanz: Bilancia = Waage](images/folie-033.png)
 
-## Jahresabschlussbestandteile
-
-**Bilanz**
-
-Zweck der Bilanz
-
-- Die Passivseite (rechts) der Bilanz zeigt die Herkunft der Finanzierungsmittel eines Unternehmens.
-  - Unternehmen können sich grundsätzlich durch Einlagen der Eigentümer finanzieren (Eigenkapital) oder durch das Leihen von Geld z.B. von Banken (Fremdkapital).
-  - Das Eigenkapital gehört dem Unternehmen langfristig und steht für immer zur Verfügung. Das Fremdkapital muss nach einer gewissen Zeit zurückgezahlt werden.
-- Die Aktivseite (links) zeigt an, wofür das bereitgestellte Geld investiert wurde. Unternehmen können dabei grundsätzlich investieren in
-  - langfristige Vermögensgegenstände (Anlagevermögen) investieren (z.B. Maschinen, Autos, Computer, etc.) oder
+- **Passivseite (rechts):** Herkunft der Finanzierungsmittel eines Unternehmens.
+  - Finanzierung grundsätzlich durch Einlagen der Eigentümer (Eigenkapital) oder durch Leihen von Geld, z.B. von Banken (Fremdkapital).
+  - Eigenkapital gehört dem Unternehmen langfristig und steht für immer zur Verfügung; Fremdkapital muss nach einer gewissen Zeit zurückgezahlt werden.
+- **Aktivseite (links):** wofür das bereitgestellte Geld investiert wurde – grundsätzlich in
+  - langfristige Vermögensgegenstände (Anlagevermögen) (z.B. Maschinen, Autos, Computer, etc.) oder
   - kurzfristige Vermögensgegenstände (Umlaufvermögen) (z.B. Rohstoffe zur Produktion, Kassenbestände oder offene Forderungen von Kunden)
 
-## Jahresabschlussbestandteile
+## Bilanz – Struktur gemäß §266 HGB - Kontenform
 
-**Bilanz – Struktur gemäß §266 HGB - Kontenform**
-
-Bilanz
+Bilanzstruktur für Kapitalgesellschaften in §266 festgelegt; Vermögensgegenstände und Kapitalpositionen nach absteigender Liquidierbarkeit aufgelistet.
 
 | Aktiva | Passiva |
 |---|---|
@@ -89,11 +58,9 @@ Bilanz
 | D. Aktive latente Steuern | D. Passive latente Steuern |
 | Aktiva gesamt | Passiva gesamt |
 
-Die Bilanzstruktur ist für Kapitalgesellschaften in §266 festgelegt. Die Vermögensgegenstände und Kapitalpositionen werden dabei nach absteigender Liquidierbarkeit aufgelistet.
+## Bilanz – Struktur gemäß §266 HGB - Staffelform
 
-## Jahresabschlussbestandteile
-
-**Bilanz – Struktur gemäß §266 HGB - Staffelform**
+Bilanz auch in Staffelform (Spaltenform) darstellbar, d.h. Positionen untereinander in einer Spalte. Summe der Aktiva muss der Summe der Passiva entsprechen.
 
 Jahresabschluss zum Geschäftsjahr vom 01.01.2023 bis zum 31.12.2023
 
@@ -122,17 +89,12 @@ Bilanz — Passiva
 | C. Verbindlichkeiten | 2.506.765,74 | 68.249,44 |
 | Summe Passiva | 4.403.379,91 | 1.885.529,99 |
 
-Die Bilanz kann auch in Staffelform (Spaltenform) dargestellt werden, d.h. die Positionen sind untereinander in einer Spalte. Die Summe der Aktiva muss der Summe der Passiva entsprechen.
+## Grundlagen der Bilanz
 
-## Jahresabschlussbestandteile
-
-**Grundlagen der Bilanz**
-
-Grundlagen
-
-- Ein Unternehmen hat im Laufe eines Geschäftsjahres eine Vielzahl von Transaktionen, sog. „Geschäftsvorfälle“ (z.B. Kauf von Maschinen, Verkauf von Produkten, Bezahlung von Mitarbeitern, etc.) Für jeden Vorfall gibt es in der Regel eine Rechnung.
-- Jeder Geschäftsvorfall / jede Rechnung eines Unternehmens wird in sog. „Büchern“ im Rechnungswesen dokumentiert, d.h. „gebucht“.
-- Die Buchungen erfolgen immer auf zwei Konten bzw. Positionen der Bilanz und GuV (sog. „Doppelte Buchführung (Doppik)“.
-- Diese Konten bilden immer zwei Seiten einer Buchung ab, jeweils im Soll und Haben. Die Summe der Sollbuchungen muss dabei immer der Summe der Habenbuchungen entsprechen. Wird z.B. ein Produkt für 10 Euro verkauft, reduziert sich der Wert deines Lagerbestands um 10 Euro und dein Kassenbestand steigt um 10 Euro.
+- Ein Unternehmen hat im Laufe eines Geschäftsjahres eine Vielzahl von Transaktionen, sog. „Geschäftsvorfälle“ (z.B. Kauf von Maschinen, Verkauf von Produkten, Bezahlung von Mitarbeitern, etc.); für jeden Vorfall gibt es in der Regel eine Rechnung.
+- Jeder Geschäftsvorfall / jede Rechnung wird in sog. „Büchern“ im Rechnungswesen dokumentiert, d.h. „gebucht“.
+- Buchungen immer auf zwei Konten bzw. Positionen der Bilanz und GuV (sog. „Doppelte Buchführung (Doppik)“.
+- Diese Konten bilden immer zwei Seiten einer Buchung ab, jeweils im Soll und Haben; Summe der Sollbuchungen muss immer der Summe der Habenbuchungen entsprechen.
+- Z.B. Produkt für 10 Euro verkauft: Wert deines Lagerbestands reduziert sich um 10 Euro, dein Kassenbestand steigt um 10 Euro.
 
 Quelle: `bilanzierung/origin/WDS25 - Bilanzierung (NOU)/04 1 - Folien/Bilanzierung - Q4 2026/Bilanzierung - Q4 2026.pdf`, Folien 31–37

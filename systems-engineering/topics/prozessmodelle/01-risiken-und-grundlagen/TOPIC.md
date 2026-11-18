@@ -1,47 +1,15 @@
 # Top Ten-Risiken und was man dagegen tun kann
 
-1. Personelle Defizite
-   - Hochtalentierte Mitarbeiter einstellen
-   - Teams zusammenstellen
-2. Unrealistische Termin- und Kostenvorgaben
-   - Detaillierte Kosten- und Zeitschätzungen mit mehreren Methoden
-   - Produkt an Kostenvorgaben orientieren
-   - Inkrementelle Entwicklung
-   - Wiederverwendung von Software
-   - Anforderungen streichen
-3. Entwicklung von falschen Funktionen
-   - Benutzerbeteiligung
-   - Prototypen
-   - Frühzeitiges Benutzerhandbuch
-4. Entwicklung der falschen GUI
-   - Benutzerbeteiligung
-   - Prototypen
-   - Aufgabenanalyse
-5. „Vergolden“
-   - Anforderungen streichen
-   - Prototypen
-   - Kosten/Nutzen-Analyse
-   - Entwicklung an Kosten orientieren
-6. Kontinuierliche Anforderungsänderungen
-   - Hohe Änderungsschwelle
-   - Inkrementelle Entwicklung (Änderungen auf später verschieben)
-7. Defizite bei extern gelieferten Komponenten
-   - Leistungstest
-   - Inspektionen
-   - Kompatibilitätsanalyse
-8. Defizite bei extern erledigten Aufträgen
-   - Prototypen
-   - Frühzeitige Überprüfung
-   - Verträge auf Erfolgsbasis
-9. Defizite in der Echtzeitleistung
-   - Simulation
-   - Leistungstest
-   - Prototypen
-   - Tuning
-10. Überforderung der Softwaretechnik
-    - Technische Analyse
-    - Kosten/Nutzen-Analyse
-    - Prototypen
+1. **Personelle Defizite:** Hochtalentierte Mitarbeiter einstellen; Teams zusammenstellen
+2. **Unrealistische Termin- und Kostenvorgaben:** Detaillierte Kosten- und Zeitschätzungen mit mehreren Methoden; Produkt an Kostenvorgaben orientieren; Inkrementelle Entwicklung; Wiederverwendung von Software; Anforderungen streichen
+3. **Entwicklung von falschen Funktionen:** Benutzerbeteiligung; Prototypen; Frühzeitiges Benutzerhandbuch
+4. **Entwicklung der falschen GUI:** Benutzerbeteiligung; Prototypen; Aufgabenanalyse
+5. **„Vergolden“:** Anforderungen streichen; Prototypen; Kosten/Nutzen-Analyse; Entwicklung an Kosten orientieren
+6. **Kontinuierliche Anforderungsänderungen:** Hohe Änderungsschwelle; Inkrementelle Entwicklung (Änderungen auf später verschieben)
+7. **Defizite bei extern gelieferten Komponenten:** Leistungstest; Inspektionen; Kompatibilitätsanalyse
+8. **Defizite bei extern erledigten Aufträgen:** Prototypen; Frühzeitige Überprüfung; Verträge auf Erfolgsbasis
+9. **Defizite in der Echtzeitleistung:** Simulation; Leistungstest; Prototypen; Tuning
+10. **Überforderung der Softwaretechnik:** Technische Analyse; Kosten/Nutzen-Analyse; Prototypen
 
 ## Was sind Prozessmodelle?
 
@@ -77,9 +45,7 @@ Ein typisches Prozessmodell: „code & fix“...
 - Fehler sind schwer zu finden, da Tests schlecht vorbereitet sind und Änderungen unzureichend durchgeführt werden.
   - Testphase notwendig
 
-**Fazit**
-
-Wir brauchen ein besseres Prozessmodell als „code & fix“!
+**Fazit:** Wir brauchen ein besseres Prozessmodell als „code & fix“!
 
 ## Inhalt eines Prozessmodells
 

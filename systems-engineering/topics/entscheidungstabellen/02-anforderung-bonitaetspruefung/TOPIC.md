@@ -38,9 +38,7 @@ Aber wenn so ein Auftrag reinkommt, dann müssen wir erst einmal klären, ob das
 
 DHBW-Studenten – zum Beispiel – sind echt ein Problem für uns. Deshalb prüfen wir das gleich zu Beginn des Auftragsprozesses. Wenn das nämlich ein schräger Vogel ist, verweigern wir die Ausführung des Auftrags."
 
-Welche Fragen stellen Sie jetzt als RE-Ingenieur/in?
-
-## Schreiben Sie hier Ihre Fragen an unseren CRM-Kunden auf
+Welche Fragen stellen Sie jetzt als RE-Ingenieur/in? Schreiben Sie hier Ihre Fragen an unseren CRM-Kunden auf
 
 ## Die Bonitätsprüfung im O-Ton
 

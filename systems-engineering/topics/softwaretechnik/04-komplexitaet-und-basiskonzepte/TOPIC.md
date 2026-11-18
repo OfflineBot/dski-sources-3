@@ -18,10 +18,10 @@
 | Komplexität | Basiskonzepte | Anwendungsbereich |
 | --- | --- | --- |
 | ...der **Daten** | Data Dictionary<br>ERM<br>(Zustandsautomat)<br>Klassendiagramm | Betriebswirtschaftlich |
-| ...der **Funktionen** | Klassendiagramm<br>Geschäftsprozesse<br>Datenflussdiagramm<br>Funktionsbaum | Technisch-wissenschaftlich |
-| ...der **Algorithmen** | Pseudocode<br>Programmablaufplan<br>Struktogramm<br>Entscheidungstabelle | Echtzeit |
-| ...der **Systemumgebung** | Datenflussdiagramm | |
-| ...des **zeitabhängigen Verhaltens** | Petri-Netz<br>Zustandsautomat<br>Aktivitätsdiagramm<br>Sequenzdiagramm<br>Kollaborationsdiagramm | |
+| ...der **Funktionen** | Klassendiagramm<br>Geschäftsprozesse<br>Datenflussdiagramm<br>Funktionsbaum | Betriebswirtschaftlich<br>Technisch-wissenschaftlich |
+| ...der **Algorithmen** | Pseudocode<br>Programmablaufplan<br>Struktogramm<br>Entscheidungstabelle | Technisch-wissenschaftlich<br>Echtzeit |
+| ...der **Systemumgebung** | Datenflussdiagramm | Echtzeit |
+| ...des **zeitabhängigen Verhaltens** | Petri-Netz<br>Zustandsautomat<br>Aktivitätsdiagramm<br>Sequenzdiagramm<br>Kollaborationsdiagramm | Echtzeit |
 | ...der **GUI** | grafische Spezifikation<br>(Petri-Netz)<br>(Zustandsautomat)<br>Kontrollstrukturen | Mensch-Computer-Interaktion |
 
 ## Einsatz der Basismethoden in Prozessmodellen

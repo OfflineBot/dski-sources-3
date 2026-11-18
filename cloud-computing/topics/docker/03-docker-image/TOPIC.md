@@ -2,7 +2,7 @@
 
 Docker Image beziehen und selbst bauen
 
-## Status Quo (Seite 18)
+## Status Quo: Fehlerursachen beim Livegang
 
 Welche Fehlerursachen beim Livegang einer Anwendung in der produktiven Umgebung haben Sie erlebt?
 
@@ -14,21 +14,15 @@ Welche Fehlerursachen beim Livegang einer Anwendung in der produktiven Umgebung 
 
 ### Notizen
 
-Bevor wir uns näher mit Docker Images beschäftigen, blicken wir auf häufige Ursachen
-für ein fehlerhaftes Deployment. So scheitern Deployments oft, wenn unterschiedliche
-Versionen von Applikationen eingesetzt werden. Ein weiterer Grund für fehlerhafte
-Deployments sind unterschiedliche Konfigurationen zwischen den Maschinen, die für
-den Test und den produktiven Einsatz verwendet werden. Weitere Fehlerursachen für
-fehlgeschlagene Deployments sind ein unterschiedliches Vorgehen beim
-Deploymentvorgang und die fehlerhafte Übertragung von Daten auf die produktive
-Maschine.
+- Das sind häufige Ursachen für ein fehlerhaftes Deployment.
+- Unterschiedliche Konfigurationen meint: zwischen den Maschinen, die für den Test und den produktiven Einsatz verwendet werden.
 
-## Überblick (Seite 19)
+## Überblick: Aufbau in Schichten
 
 - Ein Docker Image hat einen Namen (Tag) und besteht aus den notwendigen Abhängigkeiten und Konfigurationen zur Ausführung einer Anwendung.
-- Das Docker Image hat einen strukturierten Aufbau wobei jede Änderung und Konfiguration in einer eigenen Schicht samt Prüfsumme erfasst wird.
-- Gemäß dem Prinzip der immutable infrastructure ist jede Schicht unveränderbar, d.h. sie wird nicht verändert sondern stets neu gebaut.
-- Die Schichten eines Images lassen sich via docker image history anzeigen.
+- Strukturierter Aufbau: Jede Änderung und Konfiguration wird in einer eigenen Schicht samt Prüfsumme erfasst.
+- Prinzip der immutable infrastructure: Jede Schicht ist unveränderbar, d.h. sie wird nicht verändert, sondern stets neu gebaut.
+- Die Schichten eines Images lassen sich via `docker image history` anzeigen.
 
 | Tag | `cloud-comp:1.1` |
 | --- | --- |
@@ -36,45 +30,23 @@ Maschine.
 |  | `RUN apt-get install vi` |
 |  | `FROM Ubuntu` |
 
-### Notizen
-
-Ein Docker Image trägt einen Tag (was dem Namen entspricht) und besteht aus den
-Abhängigkeiten und Konfigurationen, die zur Ausführung einer Anwendung erforderlich
-sind. Im Gegensatz zu dem Image einer virtuellen Maschine das als eine große Binärdatei
-gespeichert wird, besitzt ein Docker Image einen strukturierten Aufbau in Schichten.
-Jede Änderung am Docker Image wird in einer eigenen Schicht samt eigener Checksum
-abgebildet. Durch dieses Prinzip wird gemäß dem Grundsatz von ‚immutable
-infrastructure‘ sichergestellt, dass Änderungen an einer Schicht zur Folge haben, dass die
-alte Schicht verworfen wird und eine neue Schicht erstellt wird. Die einzelnen Schichten
-eines Docker Images lassen sich mit dem Befehl ‚docker image history‘ gefolgt vom
-konkreten Imagenamen anzeigen.
-
-## Überblick (Seite 20)
-
 - Jede Schicht wird nur einmal gespeichert. Dadurch wird keine Änderung an einem Docker Image redundant gespeichert.
-- Wenn ein Docker Image gebaut wird, werden die Prüfsummen jeder Schicht in aufsteigender Weise auf Änderungen überprüft.
-- Docker Images die sich bis auf eine Änderung am Ende der Konfiguration gleichen belegen dadurch nur einmal Speicher.
-- Optimierter Down- und Upload, da nur die Schichten geladen werden, die nicht bereits auf der Zielmaschine existieren.
+- Beim Bau eines Docker Image werden die Prüfsummen jeder Schicht in aufsteigender Weise auf Änderungen überprüft.
+- Docker Images, die sich bis auf eine Änderung am Ende der Konfiguration gleichen, belegen dadurch nur einmal Speicher.
+- Optimierter Down- und Upload: Es werden nur die Schichten geladen, die nicht bereits auf der Zielmaschine existieren.
 - Bei Änderungen einer Schicht wird diese und alle darauf basierenden Schichten neu gebaut.
 
 ![Docker Images — Schichten](images/layer-reuse.png)
 
 ### Notizen
 
-Der schichtenweise Aufbau resultiert in wichtigen Vorteilen zur Erstellung und zum
-Bezug neuer Docker Images. Ein großer Vorteil ist, dass jede Schicht nur einmal
-gespeichert wird. Das heißt, dass wenn sich Docker Images vom Aufbau her gleichen,
-ihre Schichten nur einmal abgelegt werden. Zur Überprüfung ob die Schichten identisch
-sind wird deren Prüfsumme verglichen. Die Prüfsumme bezieht sich hierbei auf den
-Ausgangszustand, sowie die durchgeführten Änderungen. Zudem wird der Bauprozess
-durch die Schichtenbildung optimiert da nur jene Schichten neu gebaut werden, deren
-Prüfsummen sich verändert haben. Die Ablage der bereits gebauten Schichten wird im
-Rahmen des Bauprozesses auch als Build-Cache bezeichnet. Ein weiterer Vorteil, der aus
-dem geschichteten Aufbau entsteht ist, dass nicht das gesamte Docker Image hoch- oder
-heruntergeladen werden muss, sondern nur jene Schichten, die nicht auf dem
-Zielrechner existieren.
+- Im Gegensatz zum Image einer virtuellen Maschine, das als eine große Binärdatei gespeichert wird, hat ein Docker Image einen strukturierten Aufbau in Schichten.
+- Ändert sich eine Schicht, wird die alte Schicht verworfen und eine neue Schicht erstellt.
+- `docker image history` wird gefolgt vom konkreten Imagenamen aufgerufen.
+- Ob Schichten identisch sind, wird über ihre Prüfsumme verglichen. Die Prüfsumme bezieht sich auf den Ausgangszustand sowie die durchgeführten Änderungen.
+- Build-Cache: die Ablage der bereits gebauten Schichten im Rahmen des Bauprozesses. Neu gebaut werden nur die Schichten, deren Prüfsummen sich verändert haben.
 
-## Tags (Seite 21)
+## Tags
 
 - Der Name (Tag) eines Docker Images ist in 4 Abschnitte gegliedert:
   1. Registry (optional)
@@ -93,29 +65,17 @@ Registry                  User     Image      Version
 
 ### Notizen
 
-Ein Docker Image wird mit seinem Tag referenziert. Das Tag eines Docker Images besteht
-aus vier Abschnitten. Der erste Abschnitt trägt die Adresse der Docker Registry zu der
-das Docker Image hochgeladen werden soll. Dieser Abschnitt ist optional, wird er nicht
-gesetzt, wird die Docker Registry verwendet, die als Standard gesetzt ist. Der zweite
-Abschnitt des Tags referenziert den registrierten Account des Users oder der
-Organisation bei der Docker Registry unter dem das Image abgelegt werden soll. Der
-dritte Abschnitt ist der tatsächliche Name des Docker Images. Der letzte Bestandteil des
-Tags ist die Versionierung des Docker Images.
+- Registry: Adresse der Docker Registry, zu der das Docker Image hochgeladen werden soll. Wird sie nicht gesetzt, wird die Docker Registry verwendet, die als Standard gesetzt ist.
+- User/Organisation: der registrierte Account bei der Docker Registry, unter dem das Image abgelegt werden soll.
+- Imagename: der tatsächliche Name des Docker Images. Version: die Versionierung des Docker Images.
+- ‚latest‘ steht nicht für die aktuelle Version, sondern nur als Standardwert. Auch ein alter Versionsstand kann den Zusatz ‚latest‘ besitzen; der Name hat nichts mit der Aktualität des Images zu tun.
+- Der Versionsstand eines Docker Images kann auch mehrere Tags tragen.
 
-Die Versionsinformation ist optional, wird sie nicht gesetzt wird automatisch die Version
-‚latest‘ gesetzt. Entgegen der wörtlichen Übersetzung steht ‚latest‘ hierbei nicht für die
-aktuelle Version, sondern nur als Standardwert. Das heißt es ist auch möglich, dass ein
-alter Versionsstand den Zusatz ‚latest‘ besitzt, da der Name ‚latest‘ nichts mit der
-Aktualität des Images zu tun hat.
-
-Bei Tags handelt es sich um Verweise auf den konkreten Versionsstand eines Docker
-Images. Der Versionsstand eines Docker Images kann jedoch auch mehrere Tags tragen.
-
-## Registry (Seite 22)
+## Registry
 
 - Die Docker-Registry ist ein zentraler Ort zum Speichern und Verteilen von Docker Images.
 - Ermöglicht die Umsetzung eines „image from the shelf“ Paradigma.
-- Eine Docker Registry kann öffentlich (public), oder für einen geschlossenen Teilnehmerkreis (private), zugänglich sein.
+- Eine Docker Registry kann öffentlich (public) oder für einen geschlossenen Teilnehmerkreis (private) zugänglich sein.
 - Die bekannteste public Registry ist https://hub.docker.com
   - Ist als Standard nach einer Installation gesetzt
   - Docker unterstützt mit einem eigenen Team die Aktualisierung der offiziellen Docker Images.
@@ -123,25 +83,12 @@ Images. Der Versionsstand eines Docker Images kann jedoch auch mehrere Tags trag
 
 ### Notizen
 
-Die Docker Registry ist ein zentraler Ablageort, der zum Speichern und Verteilen von
-Docker Images dient. Hierdurch soll für Unternehmen das Paradigma eines „image from
-the shelf“ umgesetzt werden. Das heißt ein Unternehmen, das ein Docker Image für eine
-bestimmte Funktionalität sucht, soll ohne größere Hürden im Stande sein das
-gewünschte Image direkt einzusetzen. Der Datentransfer zwischen dem Docker Deamon
-und der Docker Registry basiert auf der Schichtenarchitektur, sodass nur die fehlende
-Schichten übertragen werden. Bei der Docker Registry wird unterschieden ob diese
-öffentlich zugänglich ist (public registry) oder nur für einen geschlossenen
-Teilnehmerkreis (private registry), wie beispielsweise in Unternehmen.
+- „image from the shelf“: Ein Unternehmen, das ein Docker Image für eine bestimmte Funktionalität sucht, soll ohne größere Hürden im Stande sein, das gewünschte Image direkt einzusetzen.
+- Der Datentransfer zwischen dem Docker Deamon und der Docker Registry basiert auf der Schichtenarchitektur, sodass nur die fehlenden Schichten übertragen werden.
+- Private registry: beispielsweise in Unternehmen.
+- Docker Hub ist frei im Internet zugänglich und bietet offizielle Images für bekannte Applikationen wie bspw. MySQL, PostgreSQL, Spring. Das Docker-Team arbeitet dafür eng mit den Projekten zusammen und aktualisiert die Images regelmäßig.
 
-Die bekannteste öffentliche Docker Registry ist Docker Hub. Diese Registry ist frei im
-Internet zugänglich und als Standard nach der Installation von Docker gesetzt. Über
-Docker Hub werden offizielle Images für bekannte Applikationen wie bspw. MySQL,
-PostgreSQL, Spring, etc. angeboten. Hierzu unterhält Docker ein eigenes Team, das eng
-mit den Projekten zusammenarbeitet und die Docker Images regelmäßig aktualisiert.
-Offizielle Images zeichnen sich dadurch aus, dass sie keinen Namen des Users oder der
-Organisation im Tag tragen.
-
-## Hands-On: Recherche von Images (Seite 23)
+## Hands-On: Recherche von Images
 
 1. Suche auf Docker Hub nach einem geeigneten Basisimages für eine Spring Anwendung
    - Offizielle Docker Images tragen haben keinen User im Tag.
@@ -162,7 +109,7 @@ Organisation im Tag tragen.
    docker image history openjdk:16-jdk-slim
    ```
 
-## Dockerfile (Seite 24)
+## Dockerfile
 
 | Base-image | `FROM openjdk:8-jdk-alpine` |
 | --- | --- |
@@ -182,25 +129,15 @@ Organisation im Tag tragen.
 
 - Jede Zeile ist eine eigene Instruktion, die eine Schicht erstellt.
 - Der Aufbau eines Dockerfile ist dreigeteilt in: Baseimage, Konfigurationsanpassungen und dem Einstiegspunkt.
-- Der Einstiegspunkt definiert, jenen Befehl, der beim Starten eines Docker Containers ausgeführt wird.
+- Der Einstiegspunkt definiert jenen Befehl, der beim Starten eines Docker Containers ausgeführt wird.
 
 ### Notizen
 
-Eine andere Möglichkeit ein Docker Image zu erstellen ist das eigene Verfassen eines
-eigenen Dockerfiles. Hierüber kann eine individuelle Ausführungsumgebung zum
-Betreiben einer Anwendung konfiguriert werden. Das Dockerfile ist eine einfache
-Textdatei, die den Namen ‚Dockerfile‘ ohne jegliche Dateiendung trägt. Ein Dockerfile
-besteht generell aus drei zentralen Blöcken. Der erste Block benennt das Basisimage, auf
-dessen Grundlage die Einrichtung durchgeführt wird. In der Regel werden hier schlanke
-Linux Distributionen wie „apline linux“ (ca. 5 MB) eingesetzt um den digitalen
-Fußabdruck des Docker Images so gering wie möglich zu halten. Der nächste Block
-besteht aus den individuellen Anpassungen und der Übertragung des auszuführenden
-Codes. Hierbei wird so oft wie möglich der Paketmanager der Linux Distribution
-eingesetzt um Abhängigkeiten automatisch vom System handhaben zu lassen. Der letzte
-Block eines Docker Images besteht aus dem Kommando, das beim Starten eines Docker
-Containers ausgeführt wird.
+- Ein eigenes Dockerfile zu verfassen ist eine andere Möglichkeit, ein Docker Image zu erstellen: Damit wird eine individuelle Ausführungsumgebung zum Betreiben einer Anwendung konfiguriert.
+- Baseimage: In der Regel schlanke Linux Distributionen wie „apline linux“ (ca. 5 MB), um den digitalen Fußabdruck des Docker Images so gering wie möglich zu halten.
+- Anpassungen: individuelle Anpassungen und die Übertragung des auszuführenden Codes. So oft wie möglich wird der Paketmanager der Linux Distribution eingesetzt, um Abhängigkeiten automatisch vom System handhaben zu lassen.
 
-## Dockerfile — FROM, ENV, RUN (Seite 25)
+## Dockerfile: Instruktionen
 
 ```dockerfile
 FROM openjdk:8-jdk-alpine
@@ -229,33 +166,6 @@ RUN
 - Kommandos müssen vom Baseimage unterstützt werden.
 - Anwendungen werden oft unter Nutzung des Paketmanagers installiert.
 
-### Notizen
-
-Nachdem wir uns zuvor den generellen Aufbau eines Docker Images angeschaut haben,
-gehen wir im Folgenden detailliert auf die zu verwendende Befehlsstruktur ein. Der
-Beginn jedes Dockerfiles bildet die Definition des Basisimages. Hierzu wird der Befehl
-FROM eingesetzt, gefolgt vom konkreten Tag des eingesetzten Docker Image. Hierbei ist
-es empfehlenswert, sehr detaillierte Tags zu verwenden, damit einem Außenstehenden
-sofort klar ist auf welcher konkreten Version eines Images das Dockerfile basiert. Ferner
-ist zu berücksichtigen, dass es keine automatische Aktualisierung der Docker Images
-gibt, sondern die Aktualisierung manuell über den Austausch des verwendeten Tags
-erfolgt.
-
-Der Befehl ENV wird dazu eingesetzt, um Umgebungsvariablen in der
-Ausführungsumgebung zu definieren. Umgebungsvariablen sind ein zentraler
-Mechanismus um das Laufzeitverhalten einer Anwendung anzupassen, da sie von jedem
-Betriebssystem unterstützt werden. So ist es beispielsweise möglich, Programmlogik
-oder Versionsinformationen über Umgebungsvariablen zu beeinflussen. Ferner sind die
-definierten Umgebungsvariablen nicht statisch, sondern können zur Laufzeit
-überschrieben werden.
-
-Mit dem Befehl RUN können Kommandos ausgeführt werden, wie wenn man direkt das
-Betriebssystem verwenden würde. Unter Nutzung der RUN Befehle kann man somit
-nötige Programme installieren oder Systemkonfigurationen, wie bspw. weitere Benutzer
-hinzufügen.
-
-## Dockerfile — WORKDIR, COPY, EXPOSE (Seite 26)
-
 WORKDIR
 
 - Setzt im Container das Ausgangsverzeichnis für alle folgenden Kommandos.
@@ -271,59 +181,28 @@ EXPOSE
 - Zugriff zur Laufzeit kann nur über die aufgelisteten Ports erfolgen.
 - Unabhängig von der Erreichbarkeit vom Host, die im Rahmen der publish Konfiguration definiert wird.
 
-### Notizen
-
-Das WORKDIR Kommando ist besonders hilfreich wenn es darum geht Dateien in das
-gleiche Verzeichnis im Docker Container zu kopieren. Um Flüchtigkeitsfehler zu
-vermeiden, die aus dem Copy-Paste von Verzeichnispfaden resultieren, kann man mit
-dem WORKDIR Befehl ein Stammverzeichnis innerhalb des Containers setzten auf das
-sich fortan alle Kommandos beziehen. Dadurch ist es nicht mehr nötig
-übereinstimmende Verzeichnispfade für den Zielpfad bei den Kommandos mehrfach zu
-wiederholen.
-
-Der COPY Befehl dient dazu lokale Ressourcen in das Docker Image zu kopieren. Dies
-bietet sich insbesondere für statische Binärdateien oder auszuführenden Programmcode
-an. Hierbei ist zu beachten, dass der Befehl die Nutzung von Wildcards unterstützt.
-
-Mit dem Befehl EXPOSE werden eingehende Portverbindungen für das spätere
-Laufzeitverhalten definiert. Aus Sicherheitsgründen sind im Grundzustand
-eingehende Netzwerkverbindungen auf einen Docker Container untersagt. Über
-EXPOSE können nun jene Ports freigegeben werden für die eingehende
-Verbindungen erlaubt sind. Wichtig hervorzuheben ist, dass dieses Kommando
-unabhängig von der publish Option im Rahmen des docker container run Befehls
-ist. Die publish Option definiert das Mapping von Container Ports auf eingehende
-Portverbindungen des Hosts. Das EXPOSE Kommando gibt dagegen Ports für den
-Container frei, sodass überhaupt eingehender Verkehr bei dem Container
-zugelassen wird.
-
-## Dockerfile — CMD (Seite 27)
-
 CMD
 
 - Startet den Applikationsprozess
 - CMD kann zur Laufzeit überschrieben werden
 - Zwei Formen:
   - Exec form: `["java","-jar","app.jar"]`
-  - Shell form: `java –jar app.jar` Vorsicht!
+  - Shell form: `java -jar app.jar` Vorsicht!
 
 ### Notizen
 
-Den Abschluss eines Dockerfile bildet der Befehl CMD. Dieser Befehl wird nicht
-während der Bauzeit eines Docker Images ausgeführt, sondern es ist der erste
-Befehl der nach dem Start eines Docker Containers ausgeführt wird. Der CMD
-Befehl kann auf zweierlei Weise definiert werden. Bei der intuitiven „shell form“
-wird der auszuführende Befehl, ähnlich zum RUN Befehl, in genau dem Format
-spezifiziert wie er in die Kommandozeile eingegeben wird. Die abgewandelte
-Form hierzu ist die „exec form“ Notation, bei der jedes Befehlsargument in einem
-Arrayformat spezifiziert wird. Die beiden Notationsformen sind nicht
-gleichbedeutend. Während bei der Exec Notation, der spezifizierte Befehl als
-eigenständiger Prozess ausgeführt wird, ist der Befehl bei der shell Notation ein
-Unterprozess der Shell. Das heißt wenn ein Angreifer aus dem
-Anwendungsprozess ausbrechen würde, hätte er bei der exec Notation keine
-weiteren Hilfsmittel, während er bei Verwendung der Shell Notation alle von der
-Shell angebotenen Werkzeuge zur Verfügung hat.
+- **FROM:** Beginn jedes Dockerfiles, gefolgt vom konkreten Tag des eingesetzten Docker Image. Sehr detaillierte Tags sind empfehlenswert, damit einem Außenstehenden sofort klar ist, auf welcher konkreten Version eines Images das Dockerfile basiert. Docker Images werden nicht automatisch aktualisiert; die Aktualisierung erfolgt manuell über den Austausch des verwendeten Tags.
+- **ENV:** Definiert Umgebungsvariablen in der Ausführungsumgebung. Sie sind ein zentraler Mechanismus, um das Laufzeitverhalten anzupassen, da sie von jedem Betriebssystem unterstützt werden; z. B. lassen sich Programmlogik oder Versionsinformationen beeinflussen. Sie sind nicht statisch.
+- **RUN:** Kommandos werden ausgeführt, wie wenn man direkt das Betriebssystem verwenden würde. So kann man nötige Programme installieren oder Systemkonfigurationen vornehmen, wie bspw. weitere Benutzer hinzufügen.
+- **WORKDIR:** Besonders hilfreich, wenn Dateien in das gleiche Verzeichnis im Container kopiert werden: Es setzt ein Stammverzeichnis, auf das sich fortan alle Kommandos beziehen. Das vermeidet Flüchtigkeitsfehler durch Copy-Paste von Verzeichnispfaden; übereinstimmende Zielpfade müssen nicht mehrfach wiederholt werden.
+- **COPY:** Kopiert lokale Ressourcen in das Docker Image; bietet sich insbesondere für statische Binärdateien oder auszuführenden Programmcode an.
+- **EXPOSE:** Definiert eingehende Portverbindungen für das spätere Laufzeitverhalten. Aus Sicherheitsgründen sind im Grundzustand eingehende Netzwerkverbindungen auf einen Docker Container untersagt; EXPOSE gibt die Ports frei, für die eingehende Verbindungen erlaubt sind. Das ist unabhängig von der publish Option des `docker container run` Befehls: publish definiert das Mapping von Container Ports auf eingehende Portverbindungen des Hosts, EXPOSE gibt Ports für den Container frei, sodass überhaupt eingehender Verkehr bei dem Container zugelassen wird.
+- **CMD:** Bildet den Abschluss eines Dockerfile. Wird nicht während der Bauzeit des Images ausgeführt, sondern ist der erste Befehl, der nach dem Start eines Docker Containers ausgeführt wird.
+  - „shell form“: Der Befehl wird, ähnlich zum RUN Befehl, in genau dem Format spezifiziert, wie er in die Kommandozeile eingegeben wird. Er ist ein Unterprozess der Shell.
+  - „exec form“: Jedes Befehlsargument wird in einem Arrayformat spezifiziert. Der Befehl wird als eigenständiger Prozess ausgeführt.
+  - Die beiden Formen sind nicht gleichbedeutend: Würde ein Angreifer aus dem Anwendungsprozess ausbrechen, hätte er bei der exec Notation keine weiteren Hilfsmittel, bei der Shell Notation alle von der Shell angebotenen Werkzeuge.
 
-## Überblick wichtiger Befehle (Seite 28)
+## Überblick wichtiger Befehle
 
 |  |  |
 | --- | --- |
@@ -336,21 +215,11 @@ Shell angebotenen Werkzeuge zur Verfügung hat.
 
 ### Notizen
 
-Die folgende Folie gibt einen Überblick über die wichtigsten Docker Befehle zum
-Verwalten von Docker Images. Der erste Befehl ‚docker image list‘, gibt alle Docker
-Images zurück die sich lokal auf dem Rechner befinden. Mit dem Befehl ‚docker image
-history‘ gefolgt von dem Tag des entsprechenden Docker Images werden alle Schichten
-des Images ausgegeben. Die Erstellung eines neuen Tags erfolgt mit dem Kommando
-‚docker image tag‘. Hierbei ist zu beachten, dass ein neuer Tag erstellt wird, es wird aber
-nicht der alte Tag gelöscht. Docker Images können mit dem Befehl ‚docker image pull‘
-von der konfigurierten Docker Registry geladen werden. Um ein neues Docker Image auf
-Grundlage eines Dockerfile zu erstellen wird der Befehl ‚docker image build -t
-<ImageName> . ‘ ausgeführt. Dieser Befehl führt dazu, dass das Dockerfile, das im
-gleichen Verzeichnis liegen muss, ausgewertet und ausgeführt wird um das neue Docker
-Image zu erstellen. Bestehende Docker Images lassen sich mit dem Befehl ‚docker image
-rm‘ gefolgt vom Imagenamen löschen.
+- `docker image tag`: Es wird ein neuer Tag erstellt, der alte Tag wird aber nicht gelöscht.
+- `docker image pull` lädt von der konfigurierten Docker Registry.
+- `docker image build -t <ImageName> .`: Das Dockerfile muss im gleichen Verzeichnis liegen; es wird ausgewertet und ausgeführt, um das neue Docker Image zu erstellen.
 
-## Spring Boot & Docker (Seite 29)
+## Spring Boot & Docker
 
 - Spring unterstützt die Nutzung von Umgebungsvariablen zur:
   - Nutzung unterschiedlicher Ressourcen und Endpunkte
@@ -384,33 +253,14 @@ public class GreetingServic
 
 ### Notizen
 
-Spring bietet für die Nutzung in Docker Container verschiedene Vorteile. Eine sehr
-wichtige Eigenschaft ist die Möglichkeit auf Umgebungsvariablen leicht zuzugreifen und
-mit ihnen tief in das Verhalten der Anwendung einzugreifen. Der Haupteinsatzzweck für
-Umgebungsvariablen ist die Definition von Ressourcen und Web-Endpunkten
-entsprechend der aktuellen Laufzeit. Oft werden beispielsweise in der Entwicklung
-andere Endpunkte von Webservices verwendet als jene im produktiven Betrieb. Darüber
-hinaus können Umgebungsvariablen dazu eingesetzt werden, dass sensitive Daten
-(bspw. Passwörter) erst gar nicht generiert werden. Dies kann insbesondere sehr nützlich
-sein, wenn Logdateien dauerhaft gespeichert werden. Abschließend können
-Umgebungsvariablen in Spring auch zur Einschränkung des Funktionsumfangs eingesetzt
-werden, sodass unterschiedliche Implementierungen für die Entwicklungsumgebung und
-produktive Umgebung verwendet werden.
+- Umgebungsvariablen: Spring kann leicht auf sie zugreifen und mit ihnen tief in das Verhalten der Anwendung eingreifen.
+  - Haupteinsatzzweck: Definition von Ressourcen und Web-Endpunkten entsprechend der aktuellen Laufzeit. Oft werden in der Entwicklung andere Endpunkte von Webservices verwendet als im produktiven Betrieb.
+  - Sensitive Daten (bspw. Passwörter) werden erst gar nicht generiert; sehr nützlich, wenn Logdateien dauerhaft gespeichert werden.
+  - Einschränkung des Funktionsumfangs: unterschiedliche Implementierungen für die Entwicklungsumgebung und die produktive Umgebung.
+- Profile: Es ist möglich, vollkommen andere Klassen für die Implementierung eines Interfaces im produktiven Betrieb und in der Entwicklung einzusetzen.
+- Fat-Jar: Alle internen und externen Abhängigkeiten sind integriert. Die Jar Datei kann anschließend ohne weitere Abhängigkeiten ausgeführt werden.
 
-Darüber hinaus zeichnet sich Spring durch die Nutzung von Profilen aus. Profile steuern
-die Sichtbarkeit und Konfiguration ganzer Java Klassen, sodass es möglich ist vollkommen
-andere Klassen für die Implementierung eines Interfaces im produktiven Betrieb und in
-der Entwicklung einzusetzen. Ferner wird automatisch gemäß dem aktuell gewählten
-Profil die entsprechende Properties Datei gemäß dem Schema application-
-{profile}.properties ausgewählt. Das aktuelle Profil wird durch die Umgebungsvariable
-Spring.profiles.active gesetzt.
-
-Der Befehl ‚mvn clean install‘ kann dazu eingesetzt werden, dass mit Spring ein
-sogenanntes Fat-Jar erzeugt wird, in das alle internen und externen Abhängigkeiten
-integriert sind. Anschließend kann diese Jar Datei ohne weitere Abhängigkeiten
-ausgeführt werden.
-
-## Hands-On (Seite 30)
+## Hands-On
 
 |  |  |
 | --- | --- |
@@ -418,11 +268,6 @@ ausgeführt werden.
 | `mvn clean install` | Veranlasst Spring Boot eine Jar Datei zu bauen |
 | `docker image build -t test .` | Baut ein neues Docker Image mit dem Tag ‚test‘ basierend auf dem Dockerfile |
 | `docker container run -d -p 80:8080 test` | Erstellt einen neuen Docker Container und führt diesen aus. Port 80 des Host wird auf Port 8080 im Container weitergeleitet |
-
-## Hands-On (Seite 31)
-
-|  |  |
-| --- | --- |
 | Browser: http://localhost:80 | Führt eine HTTP-Anfrage auf dem Host unter Port 80 aus. Als Antwort kommt „ Herzlich Willkommen zur Veranstaltung Cloud Computing“ zurück. |
 | `docker container list` | Gibt eine Liste mit allen laufenden Containern aus. |
 | `docker container logs ce5` | Zeigt die Logs für die ContainerId, welche im letzten Schritt ermittelt wurde, bspw. ce5 |

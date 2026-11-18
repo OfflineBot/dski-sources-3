@@ -1,26 +1,18 @@
 # Abbildungen von Investitionen in der Bilanz
 
-## Abbildungen von Investitionen in der Bilanz
+## Kauf von Sachanlagevermögen
 
-**Kauf von Sachanlagevermögen**
-
-Definition
-
-- Das Sachanlagevermögen in der Bilanz umfasst alle physischen, langfristigen Vermögenswerte eines Unternehmens, die für den Geschäftsbetrieb notwendig sind und ihm langfristig Nutzen bringen.
+**Definition:** Sachanlagevermögen in der Bilanz = alle physischen, langfristigen Vermögenswerte eines Unternehmens, die für den Geschäftsbetrieb notwendig sind und ihm langfristig Nutzen bringen.
 
 Sachanlagevermögen
 
 | Grundstücke und Gebäude | Technische Anlagen und Maschinen | Betriebs- und Geschäftsausstattung |
 |---|---|---|
-| Grundstücke und die darauf errichteten Gebäude gehören zu den wichtigsten Bestandteilen des Sachanlagevermögens, insbesondere für Unternehmen in der Industrie und im Einzelhandel | Dazu zählen Produktionsmaschinen und technische Anlagen, die für die Herstellung von Produkten benötigt werden. Sie bilden oft den Hauptteil des Anlagevermögens in Produktionsunternehmen. | Darunter fallen alle Gegenstände, die zur Büro- oder Betriebsausstattung gehören, wie Büroeinrichtungen, Computer, Möbel und andere Arbeitsmittel |
+| Grundstücke und die darauf errichteten Gebäude; gehören zu den wichtigsten Bestandteilen des Sachanlagevermögens, insbesondere für Unternehmen in der Industrie und im Einzelhandel | Produktionsmaschinen und technische Anlagen, die für die Herstellung von Produkten benötigt werden; oft der Hauptteil des Anlagevermögens in Produktionsunternehmen | Alle Gegenstände der Büro- oder Betriebsausstattung, wie Büroeinrichtungen, Computer, Möbel und andere Arbeitsmittel |
 
-## Abbildungen von Investitionen in der Bilanz
+## Ansatz und Bewertung des Anlagevermögens
 
-**Ansatz und Bewertung**
-
-Definition
-
-- Die Erstbewertung des Anlagevermögens erfolgt gem. §253 (1), S. 1-2 zu Anschaffungskosten (AK): Diese ergeben sich wie folgt.
+**Definition:** Erstbewertung des Anlagevermögens gem. §253 (1), S. 1-2 zu Anschaffungskosten (AK):
 
 Anschaffungskosten: 1. Definition
 
@@ -42,15 +34,9 @@ Anschaffungskosten: 2. Umsetzung
 = Anschaffungskosten (HGB und StR)
 ```
 
-## Abbildungen von Investitionen in der Bilanz
+## Beispiel: Kauf einer Serveranlage
 
-**Kauf einer Serveranlage**
-
-Beispiel
-
-- Das Unternehmen erwirbt eine große Serveranlage für 40.000 und bezahlt in bar.
-- Das Sachanlagevermögen steigt damit um 40.000€.
-- Der Kassen- oder Kontostand fällt damit um 40.000€.
+Das Unternehmen erwirbt eine große Serveranlage für 40.000 und bezahlt in bar: Sachanlagevermögen steigt um 40.000€, Kassen- oder Kontostand fällt um 40.000€.
 
 | Aktiva — Bilanz | Passiva |
 |---|---|
@@ -59,29 +45,19 @@ Beispiel
 | Umlaufvermögen | |
 | Kasse -40.000 | |
 
-## Abbildungen von Investitionen in der Bilanz
+## Kauf von immateriellen Vermögensgegenständen
 
-**Kauf von immateriellen Vermögensgegenständen**
-
-Definition
-
-- Das immaterielle Anlagevermögen in der Bilanz umfasst alle nicht-physischen, langfristigen Vermögenswerte eines Unternehmens, die für den Geschäftsbetrieb notwendig sind und ihm langfristig Nutzen bringen.
+**Definition:** Immaterielles Anlagevermögen in der Bilanz = alle nicht-physischen, langfristigen Vermögenswerte eines Unternehmens, die für den Geschäftsbetrieb notwendig sind und ihm langfristig Nutzen bringen.
 
 Immaterielles Anlagevermögen
 
 | Patente und Lizenzen | Marken und Warenzeichen | Urheberrechte |
 |---|---|---|
-| Patente sind Schutzrechte für technische Erfindungen, die dem Unternehmen einen exklusiven Vorteil verschaffen. Lizenzen sind Nutzungsrechte, die ein Unternehmen an geistigem Eigentum anderer besitzt, beispielsweise zur Nutzung einer Software. | Markenrechte und Warenzeichen repräsentieren das Branding und die Wiedererkennbarkeit eines Unternehmens und können als immaterielle Vermögenswerte bilanziert werden, sofern sie käuflich erworben wurden. | Urheberrechte schützen kreative Werke wie Texte, Musik oder Bilder, die oft von Medienunternehmen als immaterielle Vermögenswerte bilanziert werden. |
+| Patente: Schutzrechte für technische Erfindungen, die dem Unternehmen einen exklusiven Vorteil verschaffen. Lizenzen: Nutzungsrechte, die ein Unternehmen an geistigem Eigentum anderer besitzt, beispielsweise zur Nutzung einer Software | Markenrechte und Warenzeichen repräsentieren das Branding und die Wiedererkennbarkeit eines Unternehmens; können als immaterielle Vermögenswerte bilanziert werden, sofern sie käuflich erworben wurden | Schützen kreative Werke wie Texte, Musik oder Bilder, die oft von Medienunternehmen als immaterielle Vermögenswerte bilanziert werden |
 
-## Abbildungen von Investitionen in der Bilanz
+## Beispiel: Kauf eines Patents
 
-**Kauf eines Patents**
-
-Beispiel
-
-- Das Unternehmen erwirbt ein Patent für 15.000 und bezahlt in bar.
-- Das immaterielle Anlagevermögen steigt damit um 15.000€.
-- Der Kassen- oder Kontostand fällt damit um 15.000€.
+Das Unternehmen erwirbt ein Patent für 15.000 und bezahlt in bar: immaterielles Anlagevermögen steigt um 15.000€, Kassen- oder Kontostand fällt um 15.000€.
 
 | Aktiva — Bilanz | Passiva |
 |---|---|
@@ -90,63 +66,22 @@ Beispiel
 | Umlaufvermögen | |
 | Kasse -15.000 | |
 
-## Abbildungen von Investitionen in der Bilanz
+## Kauf von Vorräten
 
-**Kauf von Vorräten**
-
-Definition
-
-- Vorräte in der Bilanz sind Bestände an Rohstoffen, Materialien, unfertigen und fertigen Erzeugnissen sowie Handelswaren, die ein Unternehmen für seine Produktion und den Verkauf hält. Vorräte spiegeln die Ressourcen eines Unternehmens wider, die zur Weiterverarbeitung, zum Verkauf oder zur Unterstützung der laufenden Geschäftstätigkeit benötigt werden.
-- Typische Beispiel sind Rohstoffe, Unfertige Erzeugnisse und fertige Erzeugnisse.
+- **Definition:** Vorräte in der Bilanz = Bestände an Rohstoffen, Materialien, unfertigen und fertigen Erzeugnissen sowie Handelswaren, die ein Unternehmen für seine Produktion und den Verkauf hält. Sie spiegeln die Ressourcen eines Unternehmens wider, die zur Weiterverarbeitung, zum Verkauf oder zur Unterstützung der laufenden Geschäftstätigkeit benötigt werden.
+- Typische Beispiele: Rohstoffe, Unfertige Erzeugnisse und fertige Erzeugnisse.
 - Ein zu hoher Lagerbestand an Vorräten kann zu höheren Lagerkosten, einer geringeren Liquidität (wenig Cash) und Zinskosten führen.
 
-Vorräte
+## Ansatz und Bewertung des Umlaufvermögens
 
-- Rohstoffe
-- Unfertige Erzeugnisse
-- Fertige Erzeugnisse
-
-## Abbildungen von Investitionen in der Bilanz
-
-**Ansatz und Bewertung**
-
-Definition
-
-- Die Erstbewertung des Umlaufvermögens erfolgt gem. §253 (1), S. 1-2 zu Anschaffungskosten (AK): Diese ergeben sich wie folgt.
-
-Anschaffungskosten: 1. Definition
-
-§ 255 (1) HGB: Aufwendungen ...
-
-- zum Erwerb eines VG,
-- zur Versetzung in einen betriebsbereiten Zustand,
-- dem VG einzeln zurechenbar.
-
-Anschaffungskosten: 2. Umsetzung
-
-```
-  Anschaffungspreis (ohne MwSt)
-- Anschaffungspreisminderungen
-+ Anschaffungsnebenkosten
-  (soweit einzeln zurechenbar)
-+ nachträgliche Anschaffungskosten
-———————————————————
-= Anschaffungskosten (HGB und StR)
-```
+**Definition:** Erstbewertung des Umlaufvermögens gem. §253 (1), S. 1-2 zu Anschaffungskosten (AK). Definition (§ 255 (1) HGB) und Umsetzung der Anschaffungskosten: wie oben beim Anlagevermögen.
 
 - Skontobeträge sind nicht in die AK einzubeziehen (unabhängig davon ob genutzt oder nicht).
-- Finanzierungskosten sind i.d.R. nicht direkt zurechenbar.
-- Allg. Bonuszahlungen sind i.d.R. nicht direkt zurechenbar.
+- Finanzierungskosten und allg. Bonuszahlungen sind i.d.R. nicht direkt zurechenbar.
 
-## Abbildungen von Investitionen in der Bilanz
+## Beispiel: Kauf von Vorräten
 
-**Kauf von Vorräten**
-
-Beispiel
-
-- Das Unternehmen erwirbt Vorräte zur Produktion für 25.000 und bezahlt in bar.
-- Das Vorratsvermögen steigt damit um 25.000€.
-- Der Kassen- oder Kontostand fällt damit um 25.000€.
+Das Unternehmen erwirbt Vorräte zur Produktion für 25.000 und bezahlt in bar: Vorratsvermögen steigt um 25.000€, Kassen- oder Kontostand fällt um 25.000€.
 
 | Aktiva — Bilanz | Passiva |
 |---|---|
@@ -154,9 +89,7 @@ Beispiel
 | Vorräte 25.000 | |
 | Kasse -25.000 | |
 
-## Abbildungen von Investitionen in der Bilanz
-
-**Bewertung von Vorräten**
+## Bewertung von Vorräten
 
 Wie werden Veränderungen im Marktwert der VG erfasst?
 

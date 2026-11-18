@@ -1,24 +1,6 @@
 # Aufgabenstellung und Ziele
 
-## Inhaltsübersicht
-
-A) Jahresabschluss
-
-1. Jahresabschlussgrundlagen
-2. Jahresabschlusserstellung
-3. Jahresabschlussanalyse
-
-## Inhaltsübersicht
-
-Bilanzierung und Jahresabschluss
-
-1. Jahresabschlussgrundlagen
-2. Jahresabschlusserstellung
-3. Jahresabschlussanalyse
-
-## Jahresabschlussanalyse
-
-**Aufgabenstellung**
+## Aufgabenstellung
 
 Ihr Unternehmen hat einen neuen Großkunden gefunden. Allerdings ist sich die Finanzabteilung nicht sicher, ob der Kunde wirklich liquide ist und auch zukünftig seine Rechnungen bezahlen kann. Sie sollen daher eine Jahresabschlussanalyse durchführen und eine Aussage über die Bonität des Kunden machen. Folgende Daten erhalten Sie.
 
@@ -48,21 +30,11 @@ Gewinn- und Verlustrechnung
 | sonst. Aufwand | 30.000 € | | |
 | **Jahresüberschuss** | 17.000 € | | |
 
-## Jahresabschlussanalyse
-
-**Ziele**
-
-Ziele
+## Ziele
 
 - Die Jahresabschlussanalyse dient dazu, die finanzielle Lage, die wirtschaftliche Leistungsfähigkeit und die Ertragskraft eines Unternehmens anhand der im Jahresabschluss ausgewiesenen Daten zu beurteilen.
 - Durch die Analyse von Bilanz, Gewinn- und Verlustrechnung (GuV) und teilweise auch von Anhang und Lagebericht können wertvolle Erkenntnisse über die Vermögens-, Finanz- und Ertragslage eines Unternehmens gewonnen werden.
 - Banken, Investoren und Rating-Agenturen nutzen die Jahresabschlussanalyse, um die Kreditwürdigkeit und das Risiko eines Unternehmens abzuschätzen.
-
-## Jahresabschlussanalyse
-
-**Ziele**
-
-Ziele
 
 | Beurteilung der Ertragslage | Beurteilung der Finanzlage | Beurteilung der Vermögensstruktur |
 |---|---|---|

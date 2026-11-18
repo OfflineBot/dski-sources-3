@@ -9,7 +9,8 @@
 ## Dateien in diesem Ordner
 
 - `TASKS.md`
-- `01_Mertens.Fehlschlaege.pdf` — Peter Mertens: Fehlschläge bei IT-Großprojekten der Öffentlichen Verwaltung – ein Beitrag zur Misserfolgsforschung in der Wirtschaftsinformatik
 - `images/arbeitsauftrag-1-04.png`
+
+Die Studie von Peter Mertens liegt als Literatur nur in `origin/`: systems-engineering/origin/WDS125 - Systems Engineering (BäM)/04 LE 1_ Black Swans - Warum Softwareprojekte scheitern/Peter Mertens_ Fehlschläge bei IT-Großprojekten der Öffentlichen Verwaltung – ein Beitrag zur Misserfolgsforschung in de/01_Mertens.Fehlschlaege.pdf
 
 Quelle: systems-engineering/origin/WDS125 - Systems Engineering (BäM)/04 LE 1_ Black Swans - Warum Softwareprojekte scheitern/Folien der Lerneinheit/01.RE-BlackSwansOhneLoesung.pdf, Seite 4

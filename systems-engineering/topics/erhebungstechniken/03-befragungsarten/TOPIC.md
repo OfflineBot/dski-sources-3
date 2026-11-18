@@ -58,8 +58,8 @@
 
 ## Face to Face
 
-Gespräch zwischen Interviewer und Befragtem (siehe Interview)
-Variierender Zeitrahmen
+- Gespräch zwischen Interviewer und Befragtem (siehe Interview)
+- Variierender Zeitrahmen
 
 ![Face to Face](images/folie-11.png)
 
@@ -75,7 +75,7 @@ Hauptsächlich zwei Arten
     - Sammeln von Metainformationen möglich
     - Verschieden Multimedia-Elemente können eingefügt werden (Animation, Musik,..)
 
-## Online Befragungen
+![Online Befragungen](images/folie-13.png)
 
 - ☺ Sehr kostengünstig – geringe Abhängigkeit zur Größe der Stichprobe
 - ☺ Daten liegen elektronisch vor
@@ -83,7 +83,5 @@ Hauptsächlich zwei Arten
 - ☹ Grundgesamtheit der Internetnutzer ist nicht bekannt
 - ☹ Kleinere Stichproben sind nicht repräsentativ
 - ☹ Nutzung von Multimediainhalten kann Nutzer ausschließen
-
-![Online Befragungen](images/folie-13.png)
 
 Quelle: systems-engineering/origin/WDS125 - Systems Engineering (BäM)/09 LE 6_ Erhebungstechniken - Ermittlung der Anforderungen/Folien der Lerneinheit/07.RE-Erhebungstechniken.pdf, Folien 6–13

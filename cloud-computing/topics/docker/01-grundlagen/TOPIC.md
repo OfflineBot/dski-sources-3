@@ -1,6 +1,6 @@
 # Grundlagen
 
-## Paradigma (Seite 3)
+## Paradigma
 
 - Manueller Aufwand: Hafenarbeiter betreten Schiff und entladen die Fracht.
 - Gefahr: Kein sicheres Arbeitsumfeld.
@@ -14,27 +14,13 @@
 
 ### Notizen
 
-Das Grundparadigma von Docker ist der Standardcontainer in der Frachtschifffahrt. Vor
-der Einführung bestand für die Ladung und die Entladung von Schiffen ein sehr hoher
-manueller Aufwand, da die Arbeiter das Schiff betreten mussten und die Fracht händisch
-aufnehmen mussten. Dies resultierte in Transportschäden und gefährdete zum Teil die
-Sicherheit der Arbeiter, da die Hafenbrücken oft zum Flaschenhals wurden. Ferner
-entstand durch die unklare Verfügbarkeit von Arbeitern am Hafen, sowie den
-Behinderungen beim Entladen und der Verfügbarkeit von Lagerplatz eine unklare
-Planungsgrundlage. Frachtschäden und Frachtdiebstähle waren keine Seltenheit.
+- Das Grundparadigma von Docker ist der Standardcontainer in der Frachtschifffahrt.
+- Vor der Einführung der Standardcontainer: sehr hoher manueller Aufwand für die Ladung und die Entladung von Schiffen, da die Arbeiter das Schiff betreten und die Fracht händisch aufnehmen mussten. Dies resultierte in Transportschäden und gefährdete zum Teil die Sicherheit der Arbeiter, da die Hafenbrücken oft zum Flaschenhals wurden.
+- Unklare Planungsgrundlage durch die unklare Verfügbarkeit von Arbeitern am Hafen, die Behinderungen beim Entladen und die Verfügbarkeit von Lagerplatz. Frachtschäden und Frachtdiebstähle waren keine Seltenheit.
+- Die Einführung der Standardcontainer löste einen regelrechten Paradigmenwechsel aus, der die Frachtschifffahrt massiv veränderte. Heute sind ca. 90% aller Frachtcontainer Standardcontainer, deshalb ist die gesamte Infrastruktur an den Häfen und den Schiffen auf sie optimiert.
+- Vergleich der ersten Jahre: Vor Einführung der Standardcontainer benötigte eine 18-köpfige Crew eine 8 Stunden Schicht um 80 Tonnen zu entladen. Nach der Einführung konnte eine 9-köpfige Crew in der gleichen Zeit 2000 Tonnen entladen.
 
-Die Einführung der Standardcontainer löste einen regelrechten Paradigmenwechsel aus,
-der die Frachtschifffahrt massiv veränderte. Angesichts dessen, dass heute ca. 90% aller
-Frachtcontainer Standardcontainer sind ist die gesamte Infrastruktur an den Häfen und
-den Schiffen auf die Standardcontainer optimiert. Die Einführung der Frachtcontainer
-reduzierte maßgeblich die Vorfälle an Transportschäden und Diebstählen. Ferner
-konnten die Zeiten für die Ladung und Entladung enorm verkürzt werden. Ein Vergleich
-der ersten Jahre zeigt das insbesondere: So benötigte eine 18-köpfige Crew vor
-Einführung der Standardcontainer eine 8 Stunden Schicht um 80 Tonnen zu entladen.
-Nach der Einführung der Standardcontainer konnte eine 9-köpfige Crew in der gleichen
-Zeit 2000 Tonnen entladen.
-
-## Was ist Docker (Seite 4)
+## Was ist Docker
 
 - Docker ist ein Werkzeug mit dem Anwendungen gebaut, verteilt und betrieben werden können.
 - Es ist der de-facto Standard zur Prozessvirtualisierung unter Nutzung der Kernelfunktionen cgroups und namespaces.
@@ -44,43 +30,27 @@ Zeit 2000 Tonnen entladen.
 
 ### Notizen
 
-Analog zum Standardcontainer, ist Docker eine Software, die dazu dient ausführbare
-Anwendungen zu bauen, zu verteilen und zu betreiben. Hierzu ist Docker egal welche
-Programmiersprache verwendet wird, es wird ein standardisiertes und portables Abbild
-(Image) der Anwendung und der notwendigen Systemkonfiguration erzeugt. Der
-Empfänger des Abbildes (Images) kann nach Erhalt, das Abbild direkt ausführen. Um
-diesen einfachen Workflow umzusetzen, nutzt Docker die Prozessvirtualisierung, die auf
-den Linux-Kernfunktionen cgroups und namespaces basiert. Aufgrund der intuitiven
-Handhabung und der freien Nutzung gewann Docker massive Popularität und ist heute
-der de-facto Standard zur Prozessvirtualisierung. Ohne zu übertreiben kann man
-festhalten, dass ähnlich zur Frachtschifffahrt, Docker den Grundstein für eine nachhaltige
-Veränderungen des Anwendungsbetriebs gelegt hat und so das Entstehen weiterer
-Werkezuge für den optimierten Betrieb von Cloud Computing ermöglichte.
+- Docker ist egal welche Programmiersprache verwendet wird: Es wird ein standardisiertes und portables Abbild (Image) der Anwendung und der notwendigen Systemkonfiguration erzeugt, das der Empfänger nach Erhalt direkt ausführen kann.
+- Um diesen einfachen Workflow umzusetzen, nutzt Docker die Prozessvirtualisierung, die auf den Linux-Kernfunktionen cgroups und namespaces basiert.
+- Massive Popularität aufgrund der intuitiven Handhabung und der freien Nutzung.
+- Docker hat den Grundstein für eine nachhaltige Veränderungen des Anwendungsbetriebs gelegt und so das Entstehen weiterer Werkezuge für den optimierten Betrieb von Cloud Computing ermöglicht.
+- Docker-Client: ein Kommandozeilen-Programm, das die eigegebenen Befehle übersetzt und via einer Rest-Schnittstelle an den Docker-Deamon überträgt.
+- Docker-Deamon: verantwortlich für die Erstellung und Parametrisierung der Linux-Container; nimmt die Überführung der portablen Abbilder in ausführbare Einheiten vor.
 
-Docker besteht aus zwei wichtigen Bestandteilen:
-
-1. Dem Docker-Client, dies ist ein Kommandozeilen-Programm, das die eigegebenen Befehle übersetzt und via einer Rest-Schnittstelle an den Docker-Deamon überträgt.
-2. Dem Docker-Deamon, der verantwortlich ist für die Erstellung und Parametrisierung der Linux-Container und die Überführung der portablen Abbilder in ausführbare Einheiten vornimmt.
-
-## Docker — Überblick (Seite 5)
+## Docker — Überblick
 
 ![Docker — Überblick](images/docker-overview.png)
 
 ### Notizen
 
-Das folgende Schaubild gibt einen grundlegenden Überblick über die wichtigen
-Grundpfeiler von Docker. Zentral bei der Verwendung von Docker ist das Docker Image.
-Das Docker Image ist eine Beschreibung der Laufzeitumgebung samt aller notwendigen
-Konfigurationen. Ein Docker Image selbst ist nicht ausführbar. Eine
-Laufzeitrepräsentation eines Docker Images ist der Docker Container. Docker Images
-werden über eine Docker Registry verteilt. Das heißt Images können dort abgelegt und
-bezogen werden. Darüber hinaus können Docker Images über die Verwendung eines
-Dockerfiles selbst erstellt werden.
-
-Eine Hilfe zur Verinnerlichung dieses Workflows kann sein sich ein Docker Image als ein
-Kuchenrezept vorzustellen. Anhand des Rezepts lassen sich ein oder mehrere Kuchen
-dieser Art parallel oder nacheinander erstellen. Das Rezept kann über eine
-Internetplattform (vgl. Docker Registry) verteilt und bezogen werden. Darüber hinaus
-lässt sich das Rezept in eigener kreativer Arbeit verfassen (vgl. Dockerfile).
+- Das Schaubild gibt einen grundlegenden Überblick über die wichtigen Grundpfeiler von Docker.
+- Docker Image: zentral bei der Verwendung von Docker. Eine Beschreibung der Laufzeitumgebung samt aller notwendigen Konfigurationen; selbst nicht ausführbar.
+- Docker Container: eine Laufzeitrepräsentation eines Docker Images.
+- Docker Registry: Darüber werden Docker Images verteilt, das heißt Images können dort abgelegt und bezogen werden.
+- Dockerfile: Darüber können Docker Images selbst erstellt werden.
+- Hilfe zur Verinnerlichung dieses Workflows: sich ein Docker Image als ein Kuchenrezept vorstellen.
+  - Anhand des Rezepts lassen sich ein oder mehrere Kuchen dieser Art parallel oder nacheinander erstellen.
+  - Das Rezept kann über eine Internetplattform (vgl. Docker Registry) verteilt und bezogen werden.
+  - Das Rezept lässt sich in eigener kreativer Arbeit verfassen (vgl. Dockerfile).
 
 Quelle: cloud-computing/origin/WDS125 - Cloud Computing (SCA)/05 Docker/3-Docker/3-Docker.pdf, Seiten 3–5

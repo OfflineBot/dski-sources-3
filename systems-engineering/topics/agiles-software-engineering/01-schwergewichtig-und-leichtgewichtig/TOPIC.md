@@ -43,11 +43,7 @@
     - Schwergewichtige Prozesse = Effektivität (doing the right things)
     - Leichtgewichtige Prozesse = Effektivität (doing the right things) und Effizienz (doing the things right)
 
-> Merke:
->
-> Leichtgewichtige SE-Prozesse beanspruchen für sich:
->
-> Doing the right things right!
+> **Merke:** Leichtgewichtige SE-Prozesse beanspruchen für sich: Doing the right things right!
 
 ## Agile Softwareentwicklung
 
@@ -55,8 +51,6 @@
 - Bei der Agilen SE wird hoher Wert auf die Änderbarkeit der Software gelegt. Dabei sind nicht die eingesetzten Verfahren von Bedeutung, sondern die erzielten Ergebnisse.
 - Einziges Ziel und Erfolgskriterium ist das lauffähige IS!
 
-> Merke:
->
-> Agile SE = Leichtgewichtiges Software Engineering
+> **Merke:** Agile SE = Leichtgewichtiges Software Engineering
 
 Quelle: systems-engineering/origin/WDS125 - Systems Engineering (BäM)/07 LE 4_ Agiles Software Engineering - _Elefanten isst man scheibchenweise_/Folien der Lerneinheit/04.RE-AgileSE.pdf, Folien 2–7

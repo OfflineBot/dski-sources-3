@@ -9,13 +9,8 @@
 
 ## Epic: Beispiel
 
-> EP #1:
->
-> Der Geldautomat erlaubt es einem Kunden 24x7 seine Wertpapiergeschäfte mit unserer Bank abzuwickeln.
-
-> EP #2:
->
-> Der Geldautomat erlaubt es einem Kunden 24x7 seine Geldtransaktionen mit unserer Bank abzuwickeln.
+- **EP #1:** Der Geldautomat erlaubt es einem Kunden 24x7 seine Wertpapiergeschäfte mit unserer Bank abzuwickeln.
+- **EP #2:** Der Geldautomat erlaubt es einem Kunden 24x7 seine Geldtransaktionen mit unserer Bank abzuwickeln.
 
 ## User Story: Definition
 
@@ -28,39 +23,17 @@
 
 ## User Story: Beispiel
 
-> US #1:
->
-> Als Bankkunde will ich jederzeit den Geldautomaten nutzen können, sodass ich von den Schalterzeiten unabhängig Aktien kaufen kann.
-
-> US #2:
->
-> Als Bankkunde will ich jederzeit den Geldautomaten nutzen können, sodass ich von den Schalterzeiten unabhängig Aktien verkaufen kann.
+- **US #1:** Als Bankkunde will ich jederzeit den Geldautomaten nutzen können, sodass ich von den Schalterzeiten unabhängig Aktien kaufen kann.
+- **US #2:** Als Bankkunde will ich jederzeit den Geldautomaten nutzen können, sodass ich von den Schalterzeiten unabhängig Aktien verkaufen kann.
 
 ## INVEST-Qualitätsregeln für User Stories
 
-**Independent**
-
-Die US sind unabhängig voneinander. Jede US kann als eigenständiges Paket geschätzt, geplant und umgesetzt werden.
-
-**Negotiable**
-
-Die US sind verhandelbar (und verhandelt). Sie stellen aber keinen fixen Vertrag dar. Stellt sich im Verlauf der Umsetzung heraus, dass ein Detail anders einfacher oder benutzerfreundlicher umgesetzt werden kann, dann wird diese mit dem PO abgestimmt.
-
-**Valuable**
-
-Jede US muss einen erkennbaren Wert für den Kunden liefern.
-
-**Estimatable**
-
-Der Aufwand für die US ist zu mindestens relativ abschätzbar (und geschätzt).
-
-**Small**
-
-Jede US muss innerhalb einer einzigen Iteration umsetzbar sein. Sie sollte daher, je nach Sprint-Dauer, eine Größe von maximal fünf Umsetzungstagen haben.
-
-**Testable**
-
-Jede US muss testbar sein.
+- **Independent:** Die US sind unabhängig voneinander. Jede US kann als eigenständiges Paket geschätzt, geplant und umgesetzt werden.
+- **Negotiable:** Die US sind verhandelbar (und verhandelt). Sie stellen aber keinen fixen Vertrag dar. Stellt sich im Verlauf der Umsetzung heraus, dass ein Detail anders einfacher oder benutzerfreundlicher umgesetzt werden kann, dann wird diese mit dem PO abgestimmt.
+- **Valuable:** Jede US muss einen erkennbaren Wert für den Kunden liefern.
+- **Estimatable:** Der Aufwand für die US ist zu mindestens relativ abschätzbar (und geschätzt).
+- **Small:** Jede US muss innerhalb einer einzigen Iteration umsetzbar sein. Sie sollte daher, je nach Sprint-Dauer, eine Größe von maximal fünf Umsetzungstagen haben.
+- **Testable:** Jede US muss testbar sein.
 
 ## User Story: Übungsaufgabe (20 min)
 

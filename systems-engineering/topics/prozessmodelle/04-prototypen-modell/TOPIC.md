@@ -35,9 +35,7 @@ Motto: „Redo until Right“
 
 ## Regel
 
-Merke:
-
-Der *Kreislauf des Verstehens* ist der Schlüssel zu einer erfolgreichen Systemanalyse, an deren Ende eine erfolgreiche Systemspezifikation steht!
+**Merke:** Der *Kreislauf des Verstehens* ist der Schlüssel zu einer erfolgreichen Systemanalyse, an deren Ende eine erfolgreiche Systemspezifikation steht!
 
 Beer, J.: Systemspezifikation, in: Siedersleben, J. (Hrsg.): Softwaretechnik. Praxiswissen für Softwareingenieure, 2., überarb. u. akt. Aufl., München/Wien 2003, S. 21-48.
 
@@ -57,8 +55,8 @@ Beer, J.: Systemspezifikation, in: Siedersleben, J. (Hrsg.): Softwaretechnik. Pr
 ## Ein altes Problem...
 
 Der typische Anwender:
-I can‘t tell you what I want,
-but I‘ll know it when I see it!
+
+> I can‘t tell you what I want, but I‘ll know it when I see it!
 
 ![Ein altes Problem...](images/folie-23.png)
 

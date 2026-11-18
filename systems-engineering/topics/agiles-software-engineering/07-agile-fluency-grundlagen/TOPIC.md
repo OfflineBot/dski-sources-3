@@ -26,16 +26,13 @@ Quelle: Shore, J.: Die Kunst der agilen Entwicklung, S. 25
 
 ## Jede Zone der Fluency hat verschiedene Stufen der Reife
 
-1. Lernen: Das Team erlernt die Fähigkeiten der entsprechenden Fluency-Zone
-2. Bewandert: Das Team kann eine Fähigkeit zeigen, wenn es sich darauf konzentriert
-3. Fluent (= routiniert): Solange das Team von einem Coach als Teil des Teams unterstützt wird, zeigt es die Fähigkeit automatisch, ohne darüber nachzudenken
-4. Unabhängig fluent (= unabhängig routiniert): Das Team zeigt die Fähigkeit automatisch, ohne von einem Coach unterstützt zu werden
-
-## Beispiel
-
-1. Lernen: Das Team erlernt die Fähigkeit zur Retrospektive
-2. Bewandert: Das Team macht immer genau am Ende eines Sprints eine Retrospektive
-3. Fluent (= routiniert): Angeleitet vom Coach macht das Team auch Retrospektiven, sobald sich dafür ein Bedarf zeigt
-4. Unabhängig fluent (= unabhängig routiniert): Das Team macht selbstständig Retrospektiven flexibel nach Bedarf, ohne von einem Coach unterstützt zu werden
+1. **Lernen:** Das Team erlernt die Fähigkeiten der entsprechenden Fluency-Zone
+   - Beispiel: Das Team erlernt die Fähigkeit zur Retrospektive
+2. **Bewandert:** Das Team kann eine Fähigkeit zeigen, wenn es sich darauf konzentriert
+   - Beispiel: Das Team macht immer genau am Ende eines Sprints eine Retrospektive
+3. **Fluent (= routiniert):** Solange das Team von einem Coach als Teil des Teams unterstützt wird, zeigt es die Fähigkeit automatisch, ohne darüber nachzudenken
+   - Beispiel: Angeleitet vom Coach macht das Team auch Retrospektiven, sobald sich dafür ein Bedarf zeigt
+4. **Unabhängig fluent (= unabhängig routiniert):** Das Team zeigt die Fähigkeit automatisch, ohne von einem Coach unterstützt zu werden
+   - Beispiel: Das Team macht selbstständig Retrospektiven flexibel nach Bedarf, ohne von einem Coach unterstützt zu werden
 
 Quelle: systems-engineering/origin/WDS125 - Systems Engineering (BäM)/07 LE 4_ Agiles Software Engineering - _Elefanten isst man scheibchenweise_/Agile-Fluency-Modell/04.2AgileFluencyModell.pdf, Folien 1–7

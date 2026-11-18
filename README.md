@@ -101,7 +101,8 @@ Where
 - `TOPIC.md` in the topic folder is only the index 
     (a short list that links every sub topic, no lecture content)
 - `01-sub_topic_name` follows the chapters of the original lecture notes
-- `01-sub_topic_name/TOPIC.md` is the lecture content, word by word out of `origin/`
+- `01-sub_topic_name/TOPIC.md` is the lecture content out of `origin/`, compact but complete 
+    (i only want to read it and understand the topic)
 - `images/` are only the figures that can **not** be written as markdown
 
 A table becomes a markdown table. 
@@ -112,7 +113,19 @@ What the prof says next to a slide goes under its own `## Notizen` heading,
 so slide content and spoken comment stay apart.
 
 The order may be changed so it is better to learn. 
-The words may not.
+The words may be changed to make the text compact.
+
+Compact means little text, but **nothing is missing**:
+- every statement **must keep its core** and **must be correct**!
+- every definition, formula, number, example, table and code stays
+- the terms of the prof stay as they are
+- nothing new is added
+- only the slide frame is removed (repeated titles, agenda, repeated slides)
+
+If a shorter text would change the meaning, the original words stay.
+
+Literature (papers, book chapters, links) stays only in `origin/`. 
+It is not copied to `topics/`, `origin-tasks/` or `origin-exams/`.
 
 
 ## Use of AI
@@ -125,14 +138,21 @@ In case the user asks to change anything remind him first about this!
 
 *Write any new information!*
 
-Only copy information for better organization!
+Only copy information for better organization! 
+(in `topics/` it may be written shorter, see below)
 
 ### Allowed for AI
 - extract information from `origin/` to `origin-tasks`
 - extract the old exams from `origin/` to `origin-exams`
 - create new topics based on the `origin/` and copy information to `topics/`
+- write the lecture content in `topics/` compact, with fewer words (see Topics)
 
 Copy the information from `origin/` to the other folders
+
+A compact text **must** keep the core of every statement and **must** be correct! 
+Nothing is left out. Nothing is invented. 
+If the ai is not sure about the meaning, the original words stay. 
+Tasks and exams stay word by word.
 
 
 ## About.md

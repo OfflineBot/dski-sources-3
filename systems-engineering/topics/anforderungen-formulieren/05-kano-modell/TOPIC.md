@@ -18,14 +18,10 @@ Eine Anforderung ist ein Begeisterungsfaktor, wenn den Kunden diese Anforderung 
 
 ## Kano-Modell: Ablauf
 
-- Schritt 1
-  - Identifikation von Systemmerkmalen, die klassifiziert werden sollen
-- Schritt 2
-  - Entwurf eines Fragebogens, in dem für jedes Systemmerkmal erfragt wird, wie der Stakeholder empfindet, wenn (1) das Merkmal im System enthalten ist (funktionale Frage) und (2) das Merkmal nicht im System enthalten ist (dysfunktionale Frage).
-- Schritt 3
-  - Auswertung der Befragungsergebnisse und Ermittlung der Durchschnittswerte
-- Schritt 4
-  - Identifizierung der zugehörigen Merkmalsklasse
+- Schritt 1: Identifikation von Systemmerkmalen, die klassifiziert werden sollen
+- Schritt 2: Entwurf eines Fragebogens, in dem für jedes Systemmerkmal erfragt wird, wie der Stakeholder empfindet, wenn (1) das Merkmal im System enthalten ist (funktionale Frage) und (2) das Merkmal nicht im System enthalten ist (dysfunktionale Frage).
+- Schritt 3: Auswertung der Befragungsergebnisse und Ermittlung der Durchschnittswerte
+- Schritt 4: Identifizierung der zugehörigen Merkmalsklasse
 
 ## Beispiel für FANF #005
 

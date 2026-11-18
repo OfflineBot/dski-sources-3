@@ -28,8 +28,6 @@ FANF#003: Wenn mindestens 1 Plausibilitätskriterium aus FANF#002 nicht erfüllt
 
 FANF #004: Wenn die Plausibilitätsprüfung nach FANF#002 erfolgreich war, muss das System den Kundenstammdatensatz des Neukunden in der Datenbank "CRM-DB" speichern.
 
-## Beispiel Typ 1
-
 FANF#005: Wenn ein Neukunde nach FANF#004 erfolgreich angelegt wurde, muss das System eine Kundennummer für den Neukunden generieren. Regel: Letzte Kundennummer + 1.
 
 FANF #006: Sobald die Kundennummer (FANF#005) erfolgreich erzeugt wurde, speichert das System die Kundennummer im Stammdatensatz des Neukunden (vgl. Data Dictionary) in der Datenbank "CRM-DB" ab.

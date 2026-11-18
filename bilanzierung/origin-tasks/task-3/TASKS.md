@@ -58,6 +58,13 @@ Führen Sie eine Jahresabschlussanalyse durch. Berechnen Sie dazu die folgenden 
 |---|---|---|---|
 | | | | |
 
+#### Zusatzfragen
+
+- Das Auto im Sachanlagevermögen fährt gegen die Wand und muss im Wert von 30.000€ abgeschrieben werden. Ist das Unternehmen damit insolvent?
+- Das Unternehmen muss leider noch eine Rückstellung bilden. Wie hoch darf die Rückstellung höchstens sein, damit das Unternehmen nicht überschuldet ist?
+
+Quelle der Zusatzfragen: `ReCo - Aufgabe 3 - Jahresabschlussanalyse - Aufgabe.xlsx`, Tabellenblatt "Analyse 1", Zellen H28–H30 (stehen nicht im Aufgabenblatt-PDF)
+
 ## 2 Jahresabschlussanalyse 2
 
 ### Aufgabenstellung

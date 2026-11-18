@@ -2,7 +2,7 @@
 
 Wichtige Konventionen zur Konfiguration von Docker Containern und Images
 
-## Baseimage (Seite 35)
+## Baseimage
 
 - Das Baseimage sollte so ausgewählt werden, dass es nur die wirklich benötigte Funktionalität besitzt. Ein geringerer Funktionsumfang, reduziert die Downloaddauer, den Speicherbedarf und die Angriffsfläche:
   - ubuntu ~ 188 MB,
@@ -14,30 +14,12 @@ Wichtige Konventionen zur Konfiguration von Docker Containern und Images
 
 ### Notizen
 
-Bei der Auswahl des Baseimage ist zu beachten, dass dieses nur den wirklich
-notwendigsten Funktionsbedarf abdeckt und über so wenig wie möglich
-ungenutzte Funktionalität verfügt. Mit einem geringen Funktionsumfang
-reduziert sich nicht nur der notwendige Speicherbedarf, sondern auch die
-Angriffsfläche. Wie groß der Funktionsumfang der Linux Distributionen variieren
-kann, lässt sich an der Speichergröße sehen. Während opensuse weniger als die
-Hälfte des Speichers von ubuntu benötigt, entfällt für die Linux Distribution
-‚alpine‘ rund 35-mal weniger als für ubuntu.
+- Wie groß der Funktionsumfang der Linux Distributionen variieren kann, lässt sich an der Speichergröße sehen: opensuse benötigt weniger als die Hälfte des Speichers von ubuntu, für die Linux Distribution ‚alpine‘ entfällt rund 35-mal weniger als für ubuntu.
+- Offizielle Images: Docker unterhält für deren Aktualisierung ein eigenes Team.
+- Das Baseimage wird mit einem passenden Tag referenziert. Dadurch ist es möglich, dass das Baseimage Aktualisierungen empfangen kann.
+- Abgeleitete Images neu bauen: Alle Aktualisierungen und Patches der Container zur Laufzeit werden nichtig, sobald diese neu gestartet werden. Somit können dauerhafte Veränderungen der Container nur über Anpassungen der Docker Images erreicht werden.
 
-Bei der Auswahl des Baseimage ist ferner darauf zu achten, dass ein offizielles
-Image als Baseimage verwendet werden sollte. Offizielle Images haben den
-Vorteil, dass Docker für deren Aktualisierung ein eigenes Team unterhält.
-
-Ferner ist darauf zu achten, dass das Baseimage mit einem passenden Tag
-referenziert wird. Dadurch ist es möglich, dass das Baseimage Aktualisierungen
-empfangen kann.
-
-Abschließend ist es wichtig, dass abgeleitete Images bei der Aktualisierung des
-Baseimage neu gebaut werden. Es muss beachtet werden, dass alle
-Aktualisierungen und Patches der Container zur Laufzeit nichtig werden, sobald
-diese neu gestartet werden. Somit können dauerhafte Veränderungen der
-Container nur über Anpassungen der Docker Images erreicht werden.
-
-## Tagging (Seite 36)
+## Tagging
 
 - Das Weglassen einer expliziten Version, sodass ‚latest‘ gesetzt wird, ist strikt zu vermeiden da damit:
   - verschiedene Versionen in der Registry und auf dem Client referenziert werden.
@@ -52,26 +34,13 @@ Container nur über Anpassungen der Docker Images erreicht werden.
 
 ### Notizen
 
-Bei der Verwendung von Tags ist die Nutzung von Versionsinformationen zentral.
-Andernfalls wird ‚latest‘ gesetzt doch dies hat entscheidende Nachteile. Ein wichtiger
-Nachteil ist, dass dadurch unterschiedliche Versionsstände auf dem Client und der
-Docker Registry referenziert werden können. Entgegen der wörtlichen Übersetzung steht
-‚latest‘ auch nicht für die aktuelle Version, sondern für die ‚unbekannte‘ Version. Ferner
-erfolgt keine Charakterisierung der vorgenommenen Änderungen und es ist kein
-Rücksprung auf die vorherige Version möglich.
+- Mit ‚latest‘ erfolgt keine Charakterisierung der vorgenommenen Änderungen.
+- ‚stable Tags‘ sollten stets für die Nutzung in Baseimages zum Einsatz kommen, da hier über das verwendete Schema eingestellt werden kann ob nur Sicherheitsaktualisierungen oder auch Featureupdates berücksichtigt werden sollen.
+- Einzigartige Tags (unique Tags) bei den erstellten Docker Images vermeiden, dass durch Caching veraltete Versionsstände ausgeliefert werden.
+- BuildId: die Id des Bauvorgangs; Datum: das aktuelle Datum.
+- Es sollte vermieden werden Git-Tags in die Tags einzuarbeiten.
 
-Für die Nutzung in Baseimages sollten stets ‚stable Tags‘ zum Einsatz kommen, da hier
-über das verwendete Schema eingestellt werden kann ob nur
-Sicherheitsaktualisierungen oder auch Featureupdates berücksichtigt werden sollen.
-
-Einzigartige Tags (unique Tags) sollten dagegen bei den erstellten Docker Images zum
-Einsatz kommen, da diese vermeiden, dass durch Caching veraltete Versionsstände
-ausgeliefert werden. Zur Generierung der einzigartigen Tags sollte die Id des
-Bauvorgangs (BuildId) oder das aktuelle Datum eingesetzt werden. Es sollte jedoch
-vermieden werden Git-Tags in die Tags einzuarbeiten, da diese Aktualisierungen der
-Baseimages nicht berücksichtigen.
-
-## Umgebungsvariablen (Seite 37)
+## Umgebungsvariablen
 
 - Umgebungsvariablen dürfen im Dockerfile nicht für sensible Daten wie Passwörter verwendet werden, da diese durch den ‘docker image history’ Befehl ausgelesen werden können.
 - Stattdessen sollten sensible Daten zur Laufzeit via ‘--env’ Option eingebunden werden (vgl. MySQL image). Besser verschlüsselte Varianten nutzen.
@@ -81,30 +50,13 @@ Baseimages nicht berücksichtigen.
 
 ### Notizen
 
-Wie bereits ausgeführt bieten Umgebungsvariablen einen universellen Mechanismus um
-das Verhalten einer Anwendung zur Laufzeit anzupassen. Große Vorsicht ist jedoch
-geboten bei der Verwendung von Umgebungsvariablen zum Setzen von sensiblen Daten
-wie Passwörtern. Der Grund hierfür liegt darin, dass die Umgebungsvariablen eines
-Docker Images mit dem Befehle ‚docker image history‘ ausgelesen werden können. Lässt
-es sich nicht vermeiden, dass sensible Daten als Umgebungsvariable in die Anwendung
-integriert werden, sollten diese unbedingt erst zur Laufzeit gesetzt werden. Generell ist
-es empfehlenswert statt Umgebungsvariablen, verschlüsselte Mechanismen zum
-Transport von sensiblen Daten zu wählen.
+- Umgebungsvariablen bieten einen universellen Mechanismus um das Verhalten einer Anwendung zur Laufzeit anzupassen.
+- Lässt es sich nicht vermeiden, dass sensible Daten als Umgebungsvariable in die Anwendung integriert werden, sollten diese unbedingt erst zur Laufzeit gesetzt werden. Generell ist es empfehlenswert statt Umgebungsvariablen, verschlüsselte Mechanismen zum Transport von sensiblen Daten zu wählen.
+- Sollten viele Umgebungsvariablen erst zur Laufzeit gesetzt werden kann der Docker-Befehl in der Eingabeaufforderung schnell übersichtlich werden. Um dies zu vermeiden, werden die konkreten Werte in die separate Datei ausgelagert.
+- Die Werte der Umgebungsvariablen können gemäß der Lesereihenfolge überschrieben werden.
+- ARG statt ENV im Dockerfile: wenn Umgebungsvariablen nur zur Erstellung der Anwendung benötigt werden und keinen Einfluss auf das Laufzeitverhalten der Anwendung ausüben.
 
-Sollten viele Umgebungsvariablen erst zur Laufzeit gesetzt werden kann der Docker-
-Befehl in der Eingabeaufforderung schnell übersichtlich werden. Um dies zu vermeiden,
-können die konkreten Werte in eine separate Datei ausgelagert werden die zur Laufzeit
-via ‚--env-file‘ eingebunden wird. Die Reihenfolge in der die Umgebungsvariablen
-ausgewertet werden beginnt mit dem Dockerfile. Danach wird die Datei ausgewertet die
-via env-file angesprochen wird und abschließend werden die Laufzeitargumente
-ausgewertet. Die Werte der Umgebungsvariablen können dabei gemäß der
-Lesereihenfolge überschrieben werden.
-
-Sollten Umgebungsvariablen nur zur Erstellung der Anwendung benötigt werden und
-keinen Einfluss auf das Laufzeitverhalten der Anwendung ausüben, sollten sie mit dem
-Kommando ARG statt ENV im Dockerfile verwendet werden.
-
-## Schichtenarchitektur (Seite 38)
+## Schichtenarchitektur
 
 | Änderungsfrequenz |  |
 | --- | --- |
@@ -123,32 +75,12 @@ Kommando ARG statt ENV im Dockerfile verwendet werden.
 
 ### Notizen
 
-Wie wir bereits im Vorfeld gesehen haben ist die Schichtenarchitektur ein grundlegendes
-Merkmal der Docker Images. Damit die Vorteile der Schichtenarchitektur realisiert
-werden können, ist es wichtig die Befehle in einem Dockerfile gemäß ihrer
-Änderungsfrequenz anzuordnen. Je seltener sich ein Befehl oder dessen referenzierten
-Dateien ändern, desto höher im Dockerfile ist der Befehl anzuordnen. Im Gegensatz
-hierzu sollte ein Befehl je häufiger er sich ändert weiter unten im Dockerfile angeordnet
-sein. Das Schaubild zeigt ein fehlerhaft angeordneten COPY Befehl, der die gesamten
-Vorteile der Schichtenbildung zunichtemacht. Hier wird das jar, das sich im Rahmen
-jedes Compiliervorgangs ändert, bereits in der zweiten Zeile in das Dockerfile kopiert.
-Infolgedessen werden im Rahmen jedes Compiliervorgangs Änderungen in dieser Schicht
-erkannt und es müssen diese, sowie alle darunter liegenden Schichten neu gebaut
-werden. Eine Wiederverwendung der anderen Schichten kann somit nicht umgesetzt
-werden.
+- Damit die Vorteile der Schichtenarchitektur realisiert werden können, werden die Befehle im Dockerfile gemäß ihrer Änderungsfrequenz angeordnet: Je seltener sich ein Befehl oder dessen referenzierten Dateien ändern, desto höher im Dockerfile; je häufiger er sich ändert, desto weiter unten.
+- Das Schaubild zeigt ein fehlerhaft angeordneten COPY Befehl, der die gesamten Vorteile der Schichtenbildung zunichtemacht: Das jar, das sich im Rahmen jedes Compiliervorgangs ändert, wird bereits in der zweiten Zeile in das Dockerfile kopiert. Infolgedessen werden im Rahmen jedes Compiliervorgangs Änderungen in dieser Schicht erkannt und es müssen diese, sowie alle darunter liegenden Schichten neu gebaut werden. Eine Wiederverwendung der anderen Schichten kann somit nicht umgesetzt werden.
+- RUN Befehle via ‚&&‘ kombinieren: Es werden weniger Schichten benötigt und die Bauzeit eines Images wird verkürzt.
+- Präzise Befehle: Es sollen wirklich nur die notwendigen Dateien in das Docker Image kopiert werden. Bei der Verwendung von Wildcards ist genaustens zu überprüfen ob wirklich nur die notwendigsten Dateien kopiert werden. Grund: Änderungen an unnötigen Dateien, die dennoch kopiert werden, stoßen ein Neubau der entsprechenden Schicht und aller darunterliegenden an.
 
-Eine weitere Empfehlung ist, unnötige Schichten zu vermeiden. Dies kann erreicht
-werden indem einzelne RUN Befehle via ‚&&‘ kombiniert werden. Infolgedessen werden
-weniger Schichten benötigt und die Bauzeit eines Images wird verkürzt.
-
-Abschließend empfiehlt es sich die einzelnen Befehle im Dockerfile so präzise wie
-möglich zu formulieren, sodass wirklich nur die notwendigen Dateien in das Docker
-Image kopiert werden. Bei der Verwendung von Wildcards ist genaustens zu überprüfen
-ob wirklich nur die notwendigsten Dateien kopiert werden. Der Grund hierfür liegt darin,
-dass Änderungen an unnötigen Dateien, die dennoch kopiert werden ein Neubau der
-entsprechenden Schicht und aller darunterliegenden anstößt.
-
-## Non-Root Ausführung (Seite 39)
+## Non-Root Ausführung
 
 ```dockerfile
 FROM openjdk:8-jdk-alpine
@@ -169,23 +101,16 @@ CMD ["java","-jar","/app.jar"]
 
 ### Notizen
 
-Standardmäßig werden alle Befehle im Dockerfile unter dem Administratoraccout ‚root‘
-ausgeführt. Dies birgt jedoch kritische Sicherheitsrisiken, da ein Ausbruch aus einem
-Container folgenreiche Konsequenzen haben kann, da Containerprozesse
-gleichberechtigt zu nativen Prozessen sind. Zur Vermeidung dieser Sicherheitsrisiken und
-um die Nutzung von nicht-root Benutzern zu vereinfachen gibt es das Kommando USER
-gefolgt von der konkreten UserId. Nach diesem Kommando werden alle folgenden
-Befehle unter mit dem spezifizierten Useraccount durchgeführt. Hierbei muss beachtet
-dass erst der User erstellt und dann einer neuen Benutzergruppe zugewiesen werden
-muss, da neu angelegte Benutzer standardmäßig der Administratoren Gruppe
-zugeordnet werden.
+- Standardmäßig werden alle Befehle im Dockerfile unter dem Administratoraccout ‚root‘ ausgeführt.
+- Das Kommando USER gibt es zur Vermeidung dieser Sicherheitsrisiken und um die Nutzung von nicht-root Benutzern zu vereinfachen. Es wird gefolgt von der konkreten UserId angegeben; alle folgenden Befehle werden mit dem spezifizierten Useraccount durchgeführt.
+- Zu beachten: Erst muss der User erstellt und dann einer neuen Benutzergruppe zugewiesen werden, da neu angelegte Benutzer standardmäßig der Administratoren Gruppe zugeordnet werden.
 
-## Hands-On (Seite 40)
+## Hands-On
 
 ```dockerfile
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install openjdk-8-jdk –y
+RUN apt-get install openjdk-8-jdk -y
 RUN apt-get install curl -y
 RUN mkdir app
 COPY target/* app/
@@ -211,21 +136,11 @@ CMD ["java","-jar","app.jar"]
 
 ### Notizen
 
-Abschließend wenden wir die gelernten Best-Practices, sowie unser bisheriges Wissen in
-dieser praktischen Hands-On Übung an. Ausgangspunkt ist ein Dockerfile, das die neuste
-Version des Ubuntu Betriebssystem als Baseimage hat, darauf aufbauend die Java
-Laufzeitumgebung und Curl installiert und anschließend das Verzeichnis app erzeugt in
-das es den Inhalt des Host-Verzeichnisses „target“ kopiert und die sich darin befindende
-Jar Datei ausführt.
-
-Die erste Verbesserung ist der Austausch eines umfassenden und nicht versionierten
-Basisimage in ein zweckdienliches und versioniertes Basisimage. Als nächstes können die
-Befehle zur Installation von curl zusammengefasst werden um unnötige Schichten
-einzusparen. Java ist durch das Baseimage bereits installiert. Darüber hinaus sollte die
-weitere Ausführung unter einem non-root Account stattfinden für den als nächstes der
-Account samt Gruppe angelegt wird. Der Copy Befehl wird überführt sodass es nur noch
-die Jar Datei kopiert und nicht mehr das gesamte Verzeichnis. Abschließend wird die
-gewählte Shell-Notation für den Laufzeitbefehl in die Exec-Notation überführt um die
-Sicherheit weiter zu härten.
+- Ausgangspunkt ist ein Dockerfile, das die neuste Version des Ubuntu Betriebssystem als Baseimage hat, darauf aufbauend die Java Laufzeitumgebung und Curl installiert, das Verzeichnis app erzeugt, den Inhalt des Host-Verzeichnisses „target“ hineinkopiert und die sich darin befindende Jar Datei ausführt.
+- Erste Verbesserung: Austausch eines umfassenden und nicht versionierten Basisimage in ein zweckdienliches und versioniertes Basisimage.
+- Die Befehle zur Installation von curl werden zusammengefasst um unnötige Schichten einzusparen. Java ist durch das Baseimage bereits installiert.
+- Die weitere Ausführung sollte unter einem non-root Account stattfinden, für den der Account samt Gruppe angelegt wird.
+- Der Copy Befehl kopiert nur noch die Jar Datei und nicht mehr das gesamte Verzeichnis.
+- Die gewählte Shell-Notation für den Laufzeitbefehl wird in die Exec-Notation überführt um die Sicherheit weiter zu härten.
 
 Quelle: cloud-computing/origin/WDS125 - Cloud Computing (SCA)/05 Docker/3-Docker/3-Docker.pdf, Seiten 35–40

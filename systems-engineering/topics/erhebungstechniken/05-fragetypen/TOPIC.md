@@ -22,18 +22,12 @@ Gefahren:
 
 ## Fragetyp Einstellungs- und Meinungsfragen
 
+Fragen nach persönlichen Meinungen
 „Wie beurteilen Sie das Asylgesetz?“ (sozial/unsozial, gerecht/ungerecht, gut/schlecht)
 
 Gefahren:
 
 - Non-Opinions: Viele Befragte machen sich erst im Moment der Fragestellung Gedanken über das Problem (Pseudo-Meinung)
-
-## Fragetyp Einstellungs- und Meinungsfragen
-
-Fragen nach persönlichen Meinungen
-
-Gefahren:
-
 - Frageformulierung/Wortwahl haben großen Einfluss auf die Antworten
 - „Weiß-nicht“ als gültige Antwort nicht vergessen! Auch das Nicht-Vorliegen einer Einstellung ist ein gültiger/messbarer Wert
 

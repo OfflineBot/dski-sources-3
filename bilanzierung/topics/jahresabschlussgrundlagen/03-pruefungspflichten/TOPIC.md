@@ -1,8 +1,6 @@
 # Prüfungspflichten
 
-## Prüfungspflicht
-
-Gesetzliche Grundlage
+## Gesetzliche Grundlage
 
 §316 HGB: (1) „Der Jahresabschluss und der Lagebericht von Kapitalgesellschaften, die nicht kleine im Sinne des § 267 Abs. 1 sind, sind durch einen Abschlussprüfer zu prüfen.“
 
@@ -17,7 +15,7 @@ Gesetzliche Grundlage
 - Allerdings gilt eine Gesellschaft gemäß § 267 (3) S. 2 HGB stets als groß, wenn sie mit Aktien und/oder Anleihen einen organisierten Markt in Anspruch nimmt bzw. eine Zulassung zum Handel beantragt ist. Organisierte Märkte sind Märkte, die einer hohen Transparenzpflicht unterliegen.
 - Die Angabe der Mitarbeiterzahl findet sich bei Kapitalgesellschaften gem. §285, Nr. 7 HGB im Anhang.
 
-## Prüfungspflicht
+## Was wird geprüft?
 
 | Größenklassen (§267 HGB) | Was wird geprüft? |
 |---|---|
@@ -25,13 +23,11 @@ Gesetzliche Grundlage
 | Mittelgroße Kapitalgesellschaften | Bilanz in der für kleine Kapitalgesellschaften geltenden Form (§ 266 (1) S. 3 HGB), aber mit zusätzlichen Angaben gem. § 327 (1) HGB, Anhang verkürzt nach § 327 (2) HGB, übrige Unterlagen wie große Kapitalgesellschaften. (§§ 325 (1), 327 HGB) |
 | Kleine/Kleinst-Kapitalgesellschaften | Kleine KapG i. S. v. § 267 (1) HGB sind publizitäts-, aber nicht prüfungspflichtig (§ 316 (1) HGB) |
 
-## Prüfungspflicht
+## Die Big Four
 
-Die Big Four
-
-Big Four bezeichnet das Oligopol der vier größten Wirtschaftsprüfungsgesellschaften der Welt: Deloitte, EY), KPMG und PricewaterhouseCoopers (PwC). Es steht für rund 67 Prozent des weltweiten Umsatzes in der Wirtschaftsprüfung.
-
-Die Big Four prüfen einen Großteil der börsennotierten Unternehmen weltweit, unter anderem nahezu alle Gesellschaften in den großen Aktienindizes S&P 500 (USA), DAX (Deutschland) und FTSE 100 (Großbritannien). In Deutschland werden von den 160 börsennotierten Unternehmen, die die vier wichtigsten deutschen Aktienindizes DAX, MDAX, SDAX und TecDAX bilden, 142 von den Big Four geprüft.
+- Big Four bezeichnet das Oligopol der vier größten Wirtschaftsprüfungsgesellschaften der Welt: Deloitte, EY), KPMG und PricewaterhouseCoopers (PwC). Es steht für rund 67 Prozent des weltweiten Umsatzes in der Wirtschaftsprüfung.
+- Die Big Four prüfen einen Großteil der börsennotierten Unternehmen weltweit, unter anderem nahezu alle Gesellschaften in den großen Aktienindizes S&P 500 (USA), DAX (Deutschland) und FTSE 100 (Großbritannien).
+- In Deutschland werden von den 160 börsennotierten Unternehmen, die die vier wichtigsten deutschen Aktienindizes DAX, MDAX, SDAX und TecDAX bilden, 142 von den Big Four geprüft.
 
 Die größten Wirtschaftsprüfungsgesellschaften in Deutschland
 
@@ -50,23 +46,14 @@ Die größten Wirtschaftsprüfungsgesellschaften in Deutschland
 
 Alle Angaben für 2006 — Quelle: Lünendonk
 
-## Prüfungspflicht
-
-Ergebnis:
+## Ergebnis
 
 - Das Ergebnis der Prüfung ist ein Testat durch den Abschlussprüfer/Wirtschaftsprüfer. (§316 (a) HGB), das als Bestätigungsvermerk Teil des Jahresabschlusses wird.
+- Mögliche Ergebnisse des Testats: uneingeschränkt, eingeschränkt, verweigert
 
 ![Bestätigungsvermerk](images/folie-020.png)
 
-Mögliche Ergebnisse des Testats
-
-- uneingeschränkt
-- eingeschränkt
-- verweigert
-
-## Prüfungspflicht
-
-**Praxisbeispiel Adler Real Estate / Adler Group**
+## Praxisbeispiel Adler Real Estate / Adler Group
 
 ![Praxisbeispiel Adler Real Estate / Adler Group](images/folie-021.png)
 

@@ -1,23 +1,15 @@
 # Beurteilung der Vermögensstruktur
 
-## Jahresabschlussanalyse
-
-**Ziele**
-
 Zielübersicht siehe [Aufgabenstellung und Ziele](../01-aufgabenstellung-und-ziele/TOPIC.md) (Folie 101 wiederholt Folie 90).
 
-## Jahresabschlussanalyse
-
-**Beurteilung der Vermögensstruktur**
+## Operating cycle und Cash conversion cycle
 
 ![Operating cycle und Cash conversion cycle](images/folie-102.png)
 
 - Der Operating Cycle (Betriebszyklus) ist der Zeitraum vom Eintreffen des Lagers bis zum endgültigen Geldeingang. Es stellt den Bedarf an kurzfristiger Finanzierung dar.
 - Der Cash Conversion Cycle (Bargeldumwandlungszyklus) beginnt mit der Auszahlung von Bargeld für Materialien (Auszahlung von Bargeld) und endet mit dem Einzug von Bargeld aus Forderungen (Bargeldeinzug). Eine späte Bezahlung des Lieferanten reduziert den Bedarf an kurzfristiger Finanzierung.
 
-## Jahresabschlussanalyse
-
-**Beurteilung der Vermögensstruktur**
+## DIO, DRO und DPO
 
 Days inventory outstanding (DIO) = 365 * Vorräte / Umsatzerlöse
 
@@ -27,17 +19,11 @@ Days receivables outstanding (DRO) = 365 * Forderungsbestand / Umsatzerlöse
 
 Interpretation: Die Kennzahl DRO misst wie lange (in Tagen) es dauet, bis die Kunden ihre Rechnungen bezahlt haben. Niedrige Werte implizieren eine schnelle Bezahlung, so dass Kapitalkosten und das Risiko eines Forderungsausfalle reduziert werden. Je geringer desto besser.
 
-## Jahresabschlussanalyse
-
-**Beurteilung der Vermögensstruktur**
-
 Days payables outstanding (DPO) = 365 * Verb. auf LuL / Umsatzerlöse
 
 Interpretation: Die Kennzahl DPO misst die Anzahl an Tagen, die es dauert, bis das Unternehmen seine eigenen Verbindlichkeiten bezahlt. Je höher die Kennzahl, desto länger kann das Unternehmen mit dem Geld arbeiten. Je höher desto besser.
 
-## Jahresabschlussanalyse
-
-**Beurteilung der Vermögensstruktur**
+## Accounts Receivable Days, Inventory Days, Accounts Payable Days, CCC
 
 | Company | Ticker | Industry | Accounts Receivable Days | Inventory Days | Accounts Payable Days | CCC |
 |---|---|---|---|---|---|---|

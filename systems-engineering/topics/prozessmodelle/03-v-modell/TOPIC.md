@@ -1,8 +1,7 @@
 # Überblick - Zwei V-Modelle
 
-„Klassisches“ V-Modell als Erweiterung des Wasserfallmodells
-
-V-Modell 97 und XT des Bundes als Erweiterung des „klassischen“ V-Modells
+- „Klassisches“ V-Modell als Erweiterung des Wasserfallmodells
+- V-Modell 97 und XT des Bundes als Erweiterung des „klassischen“ V-Modells
 
 ![Überblick - Zwei V-Modelle](images/folie-11.png)
 
@@ -25,17 +24,11 @@ V-Modell 97 und XT des Bundes als Erweiterung des „klassischen“ V-Modells
 
 ## 2 Arten von QS-Maßnahmen
 
-Analytische QS-Maßnahmen (➲ v.a Produktqualität)
-
-- Diagnostische Maßnahmen zur Messung des erreichten Qualitätsniveaus eines Prüflings (Produkt/Prozess).
+**Analytische QS-Maßnahmen** (➲ v.a Produktqualität): Diagnostische Maßnahmen zur Messung des erreichten Qualitätsniveaus eines Prüflings (Produkt/Prozess).
 
 ![2 Arten von QS-Maßnahmen](images/folie-14.png)
 
-## 2 Arten von QS-Maßnahmen
-
-Konstruktive QS-Maßnahmen (➲ v.a Prozessqualität)
-
-- Methoden, Sprachen, Werkzeuge, Richtlinien, Standards und Checklisten, die dafür sorgen, dass das entstehende Produkt bzw. der Erstellungsprozess a priori bestimmte Eigenschaften aufweist.
+**Konstruktive QS-Maßnahmen** (➲ v.a Prozessqualität): Methoden, Sprachen, Werkzeuge, Richtlinien, Standards und Checklisten, die dafür sorgen, dass das entstehende Produkt bzw. der Erstellungsprozess a priori bestimmte Eigenschaften aufweist.
 
 ![2 Arten von QS-Maßnahmen](images/folie-15.png)
 

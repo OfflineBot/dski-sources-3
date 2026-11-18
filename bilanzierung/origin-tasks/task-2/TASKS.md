@@ -292,6 +292,7 @@ Geschäftsvorfälle | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14
 - `ReCo - Aufgabe 2 - Jahresabschlusserstellung - Aufgaben.pdf` — Originalaufgabenblatt, Seite 6 ist das "pdf zum Eintragen der Werte" für Kapitel 9
 - `ReCo - Aufgabe 2 - Jahresabschlusserstellung - Aufgabe.xlsx` — bereitgestelltes Excel-Sheet für Kapitel 9 (Tabellenblatt "Aufgabe")
 - `ReCo - Aufgabe 2 - Jahresabschlusserstellung - Aufgabe - mit Kapitalflussrechnung.xlsx` — bereitgestelltes Excel-Sheet für Kapitel 9 mit Kapitalflussrechnung (Tabellenblatt "Aufgabe")
+- `SOLUTION.md` — die im Excel-Sheet "… mit Kapitalflussrechnung" bereits eingetragenen Werte zu Kapitel 9
 - `images/seite-6.png` — Seite 6 des Aufgabenblatts als Bild
 
 Quelle: `bilanzierung/origin/WDS25 - Bilanzierung (NOU)/05 2 - Aufgaben/ReCo - Aufgabe 2 - Jahresabschlusserstellung - Aufgaben/ReCo - Aufgabe 2 - Jahresabschlusserstellung - Aufgaben.pdf`, Seiten 1–6
