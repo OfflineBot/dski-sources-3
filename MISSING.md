@@ -17,9 +17,5 @@ Why: dont have all the notes yet
 
 Why: dont have all the notes yet
 
-- investition
-
-Why: dont have all the notes yet, but they will come in the end of november
-
 
 

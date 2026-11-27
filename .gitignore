@@ -1,1 +1,10 @@
 *.ppsx
+
+# Large media and archives: kept locally, not pushed
+*.m4a
+*.zip
+
+# Byte-identical duplicates of files kept elsewhere in the same lecture
+investition/origin/**/03 Skript/Unterlagen Finanzierung &amp; Investition/Skript als MD-File.md
+investition/origin/**/05 Zusatzmaterial/ECB staff macroeconomic projections for the euro area/ECB staff macroeconomic projections for the euro area (2).pdf
+investition/origin/**/05 Zusatzmaterial/Marktkapitalisierung DAX-Unternehmen/
